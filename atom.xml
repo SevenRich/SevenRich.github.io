@@ -6,7 +6,7 @@
   <link href="https://sevenrich.github.io/atom.xml" rel="self"/>
   
   <link href="https://sevenrich.github.io/"/>
-  <updated>2021-03-05T11:22:48.067Z</updated>
+  <updated>2021-03-05T12:46:29.044Z</updated>
   <id>https://sevenrich.github.io/</id>
   
   <author>
@@ -15,6 +15,59 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>教你 DIY 为 WordPress 生成网站访问日志，告别后台下载</title>
+    <link href="https://sevenrich.github.io/post/18.html"/>
+    <id>https://sevenrich.github.io/post/18.html</id>
+    <published>2021-03-05T12:38:01.000Z</published>
+    <updated>2021-03-05T12:46:29.044Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;对于一个网站来说，分析站点访问日志是非常重要的一件事。但是经常去服务器后台查询网站的访问日志太麻烦，而且很多 vps 都不带有访问日志这个功能。在这里许时衡给大家分享一个小技巧，可以为 WordPress</summary>
+        
+      
+    
+    
+    
+    <category term="旧博客迁移" scheme="https://sevenrich.github.io/categories/%E6%97%A7%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
+    
+    
+    <category term="WordPress" scheme="https://sevenrich.github.io/tags/WordPress/"/>
+    
+    <category term="PHP" scheme="https://sevenrich.github.io/tags/PHP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2014/05/14 第四站 南漂广州，我来了！</title>
+    <link href="https://sevenrich.github.io/post/17.html"/>
+    <id>https://sevenrich.github.io/post/17.html</id>
+    <published>2021-03-05T12:33:21.000Z</published>
+    <updated>2021-03-05T12:46:48.788Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;人人都说北漂，而我就不是那个喜欢北漂的人。&lt;/p&gt;
+&lt;p&gt;回想起当初意气风发从学校出来，几个玩的要好的人各自商量着将来要干嘛、干嘛！好有壮志凌云的感觉，但是现实是我们这些人懒。不是一般的懒，是很懒！&lt;/p&gt;
+&lt;p&gt;当初我从学校出来就一心要南漂，&lt;/p&gt;
+&lt;blockquot</summary>
+        
+      
+    
+    
+    
+    <category term="旧博客迁移" scheme="https://sevenrich.github.io/categories/%E6%97%A7%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
@@ -38,6 +91,122 @@
     
     
     <category term="hello" scheme="https://sevenrich.github.io/tags/hello/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>耒阳 SEO 实战之本地网站建设本地PHP环境的搭建</title>
+    <link href="https://sevenrich.github.io/post/16.html"/>
+    <id>https://sevenrich.github.io/post/16.html</id>
+    <published>2014-05-09T12:30:22.000Z</published>
+    <updated>2021-03-05T12:33:03.061Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;为什么要选择用 PHP 的我想不用我解释了，这个是出于安全性能及后期维护成本出发的。如果有资金、有技术的就另当别论了。&lt;/p&gt;
+&lt;p&gt;PHP环境有太多了，比如说免费的 XMAPP / PHPSTUDY / PHPNOW</summary>
+        
+      
+    
+    
+    
+    <category term="旧博客迁移" scheme="https://sevenrich.github.io/categories/%E6%97%A7%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
+    
+    
+    <category term="SEO" scheme="https://sevenrich.github.io/tags/SEO/"/>
+    
+    <category term="企业建站" scheme="https://sevenrich.github.io/tags/%E4%BC%81%E4%B8%9A%E5%BB%BA%E7%AB%99/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>耒阳 SEO 实战之本地网站建设网站系统的选择</title>
+    <link href="https://sevenrich.github.io/post/15.html"/>
+    <id>https://sevenrich.github.io/post/15.html</id>
+    <published>2014-05-01T12:23:48.000Z</published>
+    <updated>2021-03-05T12:31:18.430Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;当你的网站有了域名，有了空间，下一步就是需要一套完整的网站源码。网站的源码有很多。有收费的、有开源的、也有自己请技术人员专门开发的。当然不管你的网站属于哪一类，总归离不开一点，就是网站的系统是为了用户体验。&lt;/p&gt;
+&lt;p&gt;没有良好的用户体验的网站系统是不符合现在的社会需求的</summary>
+        
+      
+    
+    
+    
+    <category term="旧博客迁移" scheme="https://sevenrich.github.io/categories/%E6%97%A7%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
+    
+    
+    <category term="SEO" scheme="https://sevenrich.github.io/tags/SEO/"/>
+    
+    <category term="企业建站" scheme="https://sevenrich.github.io/tags/%E4%BC%81%E4%B8%9A%E5%BB%BA%E7%AB%99/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>耒阳网站建设最后一单，丰源农庄网站制作交单ing...</title>
+    <link href="https://sevenrich.github.io/post/14.html"/>
+    <id>https://sevenrich.github.io/post/14.html</id>
+    <published>2014-04-30T12:21:30.000Z</published>
+    <updated>2021-03-05T12:23:19.035Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;预览图当然要先上&lt;/p&gt;
+&lt;p&gt;首页预览：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;%E9%A6%96%E9%A1%B5.png&quot;&gt;&lt;/a&gt;{图片过期}&lt;/p&gt;
+&lt;p&gt;新闻列表页：&lt;/p&gt;
+&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="旧博客迁移" scheme="https://sevenrich.github.io/categories/%E6%97%A7%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
+    
+    
+    <category term="AspCMS" scheme="https://sevenrich.github.io/tags/AspCMS/"/>
+    
+    <category term="企业建站" scheme="https://sevenrich.github.io/tags/%E4%BC%81%E4%B8%9A%E5%BB%BA%E7%AB%99/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>耒阳 SEO 实战之本地网站建设选空间的注意要点</title>
+    <link href="https://sevenrich.github.io/post/13.html"/>
+    <id>https://sevenrich.github.io/post/13.html</id>
+    <published>2014-04-29T12:17:41.000Z</published>
+    <updated>2021-03-05T12:20:38.213Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;一个网站拥有一个域名是不能称之为网站的。最多能说是拥有了一个名字。没有任何内容，也就相当于一个地基，还没有任何盖房子的砖瓦。&lt;/p&gt;
+&lt;p&gt;如果把网站比作一个房子。那空间就相当于一个房子的砖瓦。是盖房子必不可少的要素。&lt;/p&gt;
+&lt;p&gt;那一个那么重要的要素要怎么样才能找到适合</summary>
+        
+      
+    
+    
+    
+    <category term="旧博客迁移" scheme="https://sevenrich.github.io/categories/%E6%97%A7%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
+    
+    
+    <category term="SEO" scheme="https://sevenrich.github.io/tags/SEO/"/>
+    
+    <category term="企业建站" scheme="https://sevenrich.github.io/tags/%E4%BC%81%E4%B8%9A%E5%BB%BA%E7%AB%99/"/>
     
   </entry>
   
@@ -230,9 +399,9 @@
     <category term="旧博客迁移" scheme="https://sevenrich.github.io/categories/%E6%97%A7%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
     
     
-    <category term="企业建站" scheme="https://sevenrich.github.io/tags/%E4%BC%81%E4%B8%9A%E5%BB%BA%E7%AB%99/"/>
-    
     <category term="AspCMS" scheme="https://sevenrich.github.io/tags/AspCMS/"/>
+    
+    <category term="企业建站" scheme="https://sevenrich.github.io/tags/%E4%BC%81%E4%B8%9A%E5%BB%BA%E7%AB%99/"/>
     
   </entry>
   
@@ -258,9 +427,9 @@
     <category term="旧博客迁移" scheme="https://sevenrich.github.io/categories/%E6%97%A7%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
     
     
-    <category term="WordPress" scheme="https://sevenrich.github.io/tags/WordPress/"/>
-    
     <category term="企业建站" scheme="https://sevenrich.github.io/tags/%E4%BC%81%E4%B8%9A%E5%BB%BA%E7%AB%99/"/>
+    
+    <category term="WordPress" scheme="https://sevenrich.github.io/tags/WordPress/"/>
     
   </entry>
   

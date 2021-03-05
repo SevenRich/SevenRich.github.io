@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="企业网站必备的一段加入收藏|设为主页通用HTML代码, Chris Xu">
+    <meta name="keywords" content="2014/05/14 第四站 南漂广州，我来了！, Chris Xu">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>企业网站必备的一段加入收藏|设为主页通用HTML代码 | Chris Xu</title>
+    <title>2014/05/14 第四站 南漂广州，我来了！ | Chris Xu</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -313,12 +313,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">企业网站必备的一段加入收藏|设为主页通用HTML代码</h1>
+                    <h1 class="description center-align post-title">2014/05/14 第四站 南漂广州，我来了！</h1>
                 </div>
             </div>
         </div>
@@ -432,17 +432,9 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                    <div class="article-tag">
-                        
-                            <a href="/tags/HTML/">
-                                <span class="chip bg-color">HTML</span>
-                            </a>
-                        
-                            <a href="/tags/JavaScript/">
-                                <span class="chip bg-color">JavaScript</span>
-                            </a>
-                        
-                    </div>
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -463,7 +455,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2014-04-26
+                    2021-03-05
                 </div>
                 
 
@@ -477,14 +469,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    716
+                    889
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    2 分
                 </div>
                 
 
@@ -507,66 +499,31 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>常常在企业网站上面看到有加入收藏 | 设为主页的按钮，可是一但到自己要用的时候发现代码老实写错，不能用！今天就把自己常用的通用的 html 代码分享给需要的朋友！</p>
-<p>首先我们需要建立一个 JS 文件，来保证按钮的赋值的正常。</p>
-<p>比如说建立一个 <code>zhuye.js</code> 文件，代码如下；</p>
-<pre class="line-numbers language-JavaScript" data-language="JavaScript"><code class="language-JavaScript">//加入收藏
-function AddFavorite(sURL, sTitle) {
-    sURL = encodeURI(sURL);
-    try {  
-        window.external.addFavorite(sURL, sTitle);  
-    } catch (e) {  
-        try{  
-            window.sidebar.addPanel(sTitle, sURL, "");  
-        } catch (e) {  
-            alert("加入收藏失败，请使用Ctrl+D进行添加,或手动在浏览器里进行设置.");
-        }  
-    }
-}
-//设为首页
-function SetHome(url) {
-    if (document.all) {
-        document.body.style.behavior='url(#default#homepage)';
-        document.body.setHomePage(url);
-    } else {
-        alert("您好,您的浏览器不支持自动设置页面为首页功能,请您手动在浏览器里设置该页面为首页!");
-    }
-}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>这里面的字是可以修改的，比如说加入收藏失败引导语，可以根据情况来自定义 DIY哦。</p>
-<p>然后呢，我们当然是需要在页面上建立按钮。</p>
-<p>可以是图片的，当然也可以是文字的，下面我会文字、图片的都分享一下代码。</p>
-<p>文字版加入收藏 | 设为首页 代码如下；</p>
-<pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>zhuye.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>SetHome(window.location)<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>javascript:void(0)<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>设为首页<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span> | 
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>AddFavorite(window.location,document.title)<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>javascript:void(0)<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>加入收藏<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
-<p>中间通常用 “ | ”隔开，如果你的CSS定义了可以不用。</p>
-<p>图片版加入收藏 | 设为首页 代码如下；</p>
-<pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>zhuye.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>SetHome(window.location)<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>javascript:void(0)<span class="token punctuation">"</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>设为首页<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/images/home.png<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span> | 
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>AddFavorite(window.location,document.title)<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>javascript:void(0)<span class="token punctuation">"</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>加入收藏<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/images/add.png<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>其实大家一对照就知道，其实文字和图片的差别就在于A标签中多了一个 TITLE属性，文字改成了IMG图片链接。</p>
-<p>如果你想全部换成图片 “ | ”也是可以换成图片的，可以自己定义一个 IMG链接。这样就更能融合自己的网站内容，显得更加个性。</p>
-<p>完整的一套代码如下；</p>
-<pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token name">doctype</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>设置为首页,加入收藏功能<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span> 
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span> 
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span> 
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>zhuye.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>SetHome(window.location)<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>javascript:void(0)<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>设为首页<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span> | 
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>AddFavorite(window.location,document.title)<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>javascript:void(0)<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>加入收藏<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span> 
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span> 
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>以上代码希望对同是网络技术人员，或者 SEO 爱好者有所帮助。我是耒阳许时衡，希望能和大家多多交流，探讨。</p>
+                <p>人人都说北漂，而我就不是那个喜欢北漂的人。</p>
+<p>回想起当初意气风发从学校出来，几个玩的要好的人各自商量着将来要干嘛、干嘛！好有壮志凌云的感觉，但是现实是我们这些人懒。不是一般的懒，是很懒！</p>
+<p>当初我从学校出来就一心要南漂，</p>
+<blockquote>
+<p>第一站 南漂的韶关学烧焊</p>
+</blockquote>
+<p>打拼了半年发现自己不是学烧焊的料。放弃！</p>
+<blockquote>
+<p>第二站 继续游荡在南边的沿海区深圳做服务员。</p>
+</blockquote>
+<p>工作了一年半，结果部长部长没做成，主管主管没做成。毅然发现不是你埋头苦干就能发展的。</p>
+<p>不过也幸亏做过服务员，自己的嘴巴得到了一些锻炼。基本说话是不成什么问题。尽管带着很浓的湖南腔。当然发现埋头不是唯一的出路当然也就要抬头了。</p>
+<blockquote>
+<p>第三站 继续南漂到了东莞进工厂</p>
+</blockquote>
+<p>也许是做过服务员的缘故，也许是自己的机会来了。做了一个月就被提升到了拉长，也就是工厂的组长。手下带着十几人的团队。那日子没话说，自信、高傲、傲慢等等缺点暴露。</p>
+<p>因为太年轻，所以经常做一些经验不够的事情。导致主管天天骂我，也正是这位主管让我开始了解到管理的合理、用人的技巧、量化的评估、呈上起下的传达、以及那所谓的公众演讲等等。</p>
+<p>人有的时候还真的要服那些有经验的前辈，这些人给你的启示有可能省下你几年甚至几十年的时光。这个也是为什么我在同年龄的人群中格格不入的原因吧。思想太成熟了也会和同年龄的有代沟，这个是我自己的感觉。也许就像那个《我爱男闺蜜》中的方俊，外表很强大，内心极具自卑。哎，说了也不会有人懂。也只有写这个书的人知道方俊的心理变化。呵呵。</p>
+<p>在东莞认识了长安网 <a target="_blank" rel="noopener" href="http://www.dgcaw.com/">www.dgcaw.com</a>  仓狼，开始接触电脑，开始上网，开始一发不可收拾的爱上互联网。</p>
+<p>从东莞工厂辞职，我没有出去工作过，一直在出租房里，研究网络赚钱，研究网站建设，研究网站推广。期间一年多没出过家门，所有东西网购。做过代理、做过主持、做过淘宝刷钻、做过发帖、做过外链发布、做过软文写作、做过广告点击、做过广告联盟、做过破解软件销售、做过手机装应用赚钱、做过群发短信，邮箱，QQ群、做过论坛众多小号养大号、…..很多很多，有可能很多是你都不知道的新事物。但是我却被迷住了。真的被迷住了，而且无法自拔。</p>
+<p>一年后迫于出租房邻居谈吐的压力，我被导师安排进了一家网络公司从事网站周边的事项，网站建设、网站编辑、论坛维护等深层网络基础。更懂得了网络盈利终端，盈利步骤。</p>
+<p>也为自己第四站南漂做好坚实的基础，南漂我来了，我将用我饱满的激情去创造属于我自己的天空。加油！</p>
+<blockquote>
+<p>第四站 南漂广州， 我来了</p>
+</blockquote>
 
                 
             </div>
@@ -593,7 +550,7 @@ function SetHome(url) {
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://sevenrich.github.io/post/10.html">https://sevenrich.github.io/post/10.html</a>
+                    <a href="https://sevenrich.github.io/post/17.html">https://sevenrich.github.io/post/17.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -630,15 +587,7 @@ function SetHome(url) {
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            
-                                <a href="/tags/HTML/">
-                                    <span class="chip bg-color">HTML</span>
-                                </a>
-                            
-                                <a href="/tags/JavaScript/">
-                                    <span class="chip bg-color">JavaScript</span>
-                                </a>
-                            
+                            <span class="chip bg-color">无标签</span>
                         </div>
                     
                 </div>
@@ -807,7 +756,7 @@ function SetHome(url) {
         repo: 'gitalks',
         owner: 'SevenRich',
         admin: "SevenRich",
-        id: '2014-04-26T20-02-04',
+        id: '2021-03-05T20-33-21',
         proxy: 'https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
@@ -840,13 +789,13 @@ function SetHome(url) {
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/post/12.html">
+                <a href="/post/18.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="耒阳SEO实战之本地网站建设选域名的方法">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="教你 DIY 为 WordPress 生成网站访问日志，告别后台下载">
                         
-                        <span class="card-title">耒阳SEO实战之本地网站建设选域名的方法</span>
+                        <span class="card-title">教你 DIY 为 WordPress 生成网站访问日志，告别后台下载</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -857,57 +806,8 @@ function SetHome(url) {
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2014-04-28
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-03-05
                         </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E6%97%A7%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/" class="post-category">
-                                    旧博客迁移
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/SEO/">
-                        <span class="chip bg-color">SEO</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/post/9.html">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="wordpress 用函数自定义随机图片调用">
-                        
-                        <span class="card-title">wordpress 用函数自定义随机图片调用</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2014-04-15
-                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -929,6 +829,55 @@ function SetHome(url) {
                     
                     <a href="/tags/PHP/">
                         <span class="chip bg-color">PHP</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/hello">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        
+                        <span class="card-title">Hello World</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-05
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/uncategorized/" class="post-category">
+                                    uncategorized
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/hello/">
+                        <span class="chip bg-color">hello</span>
                     </a>
                     
                 </div>

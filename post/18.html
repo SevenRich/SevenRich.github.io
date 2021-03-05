@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="企业网站必备的一段加入收藏|设为主页通用HTML代码, Chris Xu">
+    <meta name="keywords" content="教你 DIY 为 WordPress 生成网站访问日志，告别后台下载, Chris Xu">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>企业网站必备的一段加入收藏|设为主页通用HTML代码 | Chris Xu</title>
+    <title>教你 DIY 为 WordPress 生成网站访问日志，告别后台下载 | Chris Xu</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -313,12 +313,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">企业网站必备的一段加入收藏|设为主页通用HTML代码</h1>
+                    <h1 class="description center-align post-title">教你 DIY 为 WordPress 生成网站访问日志，告别后台下载</h1>
                 </div>
             </div>
         </div>
@@ -434,12 +434,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/HTML/">
-                                <span class="chip bg-color">HTML</span>
+                            <a href="/tags/WordPress/">
+                                <span class="chip bg-color">WordPress</span>
                             </a>
                         
-                            <a href="/tags/JavaScript/">
-                                <span class="chip bg-color">JavaScript</span>
+                            <a href="/tags/PHP/">
+                                <span class="chip bg-color">PHP</span>
                             </a>
                         
                     </div>
@@ -463,7 +463,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2014-04-26
+                    2021-03-05
                 </div>
                 
 
@@ -477,14 +477,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    716
+                    582
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    2 分
                 </div>
                 
 
@@ -507,66 +507,119 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>常常在企业网站上面看到有加入收藏 | 设为主页的按钮，可是一但到自己要用的时候发现代码老实写错，不能用！今天就把自己常用的通用的 html 代码分享给需要的朋友！</p>
-<p>首先我们需要建立一个 JS 文件，来保证按钮的赋值的正常。</p>
-<p>比如说建立一个 <code>zhuye.js</code> 文件，代码如下；</p>
-<pre class="line-numbers language-JavaScript" data-language="JavaScript"><code class="language-JavaScript">//加入收藏
-function AddFavorite(sURL, sTitle) {
-    sURL = encodeURI(sURL);
-    try {  
-        window.external.addFavorite(sURL, sTitle);  
-    } catch (e) {  
-        try{  
-            window.sidebar.addPanel(sTitle, sURL, "");  
-        } catch (e) {  
-            alert("加入收藏失败，请使用Ctrl+D进行添加,或手动在浏览器里进行设置.");
-        }  
+                <p>对于一个网站来说，分析站点访问日志是非常重要的一件事。但是经常去服务器后台查询网站的访问日志太麻烦，而且很多 vps 都不带有访问日志这个功能。在这里许时衡给大家分享一个小技巧，可以为 WordPress 生成网站访问日志，日志内容还是可以自定义的，这样就可以省去每次都要登录主机后台查询。</p>
+<p>把下面的代码添加到主题的 <code>function.php</code> 文件中即可：</p>
+<pre class="line-numbers language-PHP" data-language="PHP"><code class="language-PHP">make_log_file();
+
+function make_log_file(){
+    //log文件名
+    $filename = 'mylogs.txt';
+    //去除rc-ajax评论以及cron机制访问记录
+    if (strstr($_SERVER["REQUEST_URI"],"rc-ajax")== false
+        &amp;&amp; strstr($_SERVER["REQUEST_URI"],"wp-cron.php")== false ) {
+        $word .= date('mdHis',$_SERVER['REQUEST_TIME'] + 3600*8) . " ";
+        //访问页面
+        $word .= $_SERVER["REQUEST_URI"] ." ";
+        //协议
+        $word .= $_SERVER['SERVER_PROTOCOL'] ." ";
+        //方法,POST OR GET
+        $word .= $_SERVER['REQUEST_METHOD'] . " ";
+        //$word .= $_SERVER['HTTP_ACCEPT'] . " ";
+        //获得浏览器信息
+        $word .= getbrowser(). " ";
+        //传递参数
+        $word .= "[". $_SERVER['QUERY_STRING'] . "] ";
+        //跳转地址
+        $word .= $_SERVER['HTTP_REFERER'] . " ";
+        //获取IP
+        $word .= getIP() . " ";
+        $word .= "\n";
+        $fh = fopen($filename, "a");
+        fwrite($fh, $word);
+        fclose($fh);
     }
 }
-//设为首页
-function SetHome(url) {
-    if (document.all) {
-        document.body.style.behavior='url(#default#homepage)';
-        document.body.setHomePage(url);
+
+//获取IP地址，网上现成代码
+function getIP() //get ip address
+{
+    if (getenv('HTTP_CLIENT_IP'))
+    {
+        $ip = getenv('HTTP_CLIENT_IP');
+    } else if (getenv('HTTP_X_FORWARDED_FOR')) {
+        $ip = getenv('HTTP_X_FORWARDED_FOR');
+    } else if (getenv('REMOTE_ADDR')) {
+        $ip = getenv('REMOTE_ADDR');
     } else {
-        alert("您好,您的浏览器不支持自动设置页面为首页功能,请您手动在浏览器里设置该页面为首页!");
+        $ip = $_SERVER['REMOTE_ADDR'];
     }
-}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>这里面的字是可以修改的，比如说加入收藏失败引导语，可以根据情况来自定义 DIY哦。</p>
-<p>然后呢，我们当然是需要在页面上建立按钮。</p>
-<p>可以是图片的，当然也可以是文字的，下面我会文字、图片的都分享一下代码。</p>
-<p>文字版加入收藏 | 设为首页 代码如下；</p>
-<pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>zhuye.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>SetHome(window.location)<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>javascript:void(0)<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>设为首页<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span> | 
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>AddFavorite(window.location,document.title)<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>javascript:void(0)<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>加入收藏<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+    return $ip;
+}
 
-<p>中间通常用 “ | ”隔开，如果你的CSS定义了可以不用。</p>
-<p>图片版加入收藏 | 设为首页 代码如下；</p>
-<pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>zhuye.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>SetHome(window.location)<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>javascript:void(0)<span class="token punctuation">"</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>设为首页<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/images/home.png<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span> | 
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>AddFavorite(window.location,document.title)<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>javascript:void(0)<span class="token punctuation">"</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>加入收藏<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/images/add.png<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+//获取浏览器信息，移动端，平板电脑数据还未加上。
+function getbrowser()
+{
+    $Agent = $_SERVER['HTTP_USER_AGENT'];
+    $browser = '';
+    $browserver = '';
 
-<p>其实大家一对照就知道，其实文字和图片的差别就在于A标签中多了一个 TITLE属性，文字改成了IMG图片链接。</p>
-<p>如果你想全部换成图片 “ | ”也是可以换成图片的，可以自己定义一个 IMG链接。这样就更能融合自己的网站内容，显得更加个性。</p>
-<p>完整的一套代码如下；</p>
-<pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token name">doctype</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>设置为首页,加入收藏功能<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span> 
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span> 
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span> 
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>zhuye.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>SetHome(window.location)<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>javascript:void(0)<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>设为首页<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span> | 
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>AddFavorite(window.location,document.title)<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>javascript:void(0)<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>加入收藏<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span> 
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span> 
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+    if (ereg('Mozilla', $Agent) &amp;&amp; ereg('Chrome', $Agent)) {
+        $temp = explode('(', $Agent);
+        $Part = $temp[2];
+        $temp = explode('/', $Part);
+        $browserver = $temp[1];
+        $temp = explode(' ', $browserver);
+        $browserver = $temp[0];
+        $browserver = $browserver;
+        $browser = 'Chrome';
+    }
 
-<p>以上代码希望对同是网络技术人员，或者 SEO 爱好者有所帮助。我是耒阳许时衡，希望能和大家多多交流，探讨。</p>
+    if(ereg('Mozilla', $Agent) &amp;&amp; ereg('Firefox', $Agent)) {
+        $temp = explode('(', $Agent);
+        $Part = $temp[1];
+        $temp = explode('/', $Part);
+        $browserver = $temp[2];
+        $temp = explode(' ', $browserver);
+        $browserver = $temp[0];
+        $browserver = $browserver;
+        $browser = 'Firefox';
+    }
+
+    if(ereg('Mozilla', $Agent) &amp;&amp; ereg('Opera', $Agent)) {
+        $temp = explode('(', $Agent);
+        $Part = $temp[1];
+        $temp = explode(')', $Part);
+        $browserver = $temp[1];
+        $temp = explode(' ', $browserver);
+        $browserver = $temp[2];
+        $browserver = $browserver;
+        $browser = 'Opera';
+    }
+
+    if(ereg('Mozilla', $Agent) &amp;&amp; ereg('MSIE', $Agent)) {
+        $temp = explode('(', $Agent);
+        $Part = $temp[1];
+        $temp = explode(';', $Part);
+        $Part = $temp[1];
+        $temp = explode(' ', $Part);
+        $browserver = $temp[2];
+        $browserver = $browserver;
+        $browser = 'Internet Explorer';
+    }
+
+    if($browser != '') {
+        $browseinfo = $browser.' '.$browserver;
+    } else {
+        $browseinfo = $_SERVER['HTTP_USER_AGENT'];
+    }
+    return $browseinfo;
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>ok，在你的站点根目录上就会生成 <code>mylogs.txt</code> 这个文件，通过 <code>http://域名/mylogs.txt</code> 可以直接访问。这样生成的网站日志会比 <code>CNZZ</code> 等第三方统计工具生成的日志精准的多，你可以通过日志得知哪些人访问哪些文件，哪些蜘蛛爬行过了等等信息。</p>
+<blockquote>
+<p>如果以上信息对你有用，请分享给你的好朋友，但是请记得注明： <code>《 来源：耒阳SEO www.leiyangseo.com 》</code></p>
+</blockquote>
 
                 
             </div>
@@ -593,7 +646,7 @@ function SetHome(url) {
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://sevenrich.github.io/post/10.html">https://sevenrich.github.io/post/10.html</a>
+                    <a href="https://sevenrich.github.io/post/18.html">https://sevenrich.github.io/post/18.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -631,12 +684,12 @@ function SetHome(url) {
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/HTML/">
-                                    <span class="chip bg-color">HTML</span>
+                                <a href="/tags/WordPress/">
+                                    <span class="chip bg-color">WordPress</span>
                                 </a>
                             
-                                <a href="/tags/JavaScript/">
-                                    <span class="chip bg-color">JavaScript</span>
+                                <a href="/tags/PHP/">
+                                    <span class="chip bg-color">PHP</span>
                                 </a>
                             
                         </div>
@@ -807,7 +860,7 @@ function SetHome(url) {
         repo: 'gitalks',
         owner: 'SevenRich',
         admin: "SevenRich",
-        id: '2014-04-26T20-02-04',
+        id: '2021-03-05T20-38-01',
         proxy: 'https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
@@ -836,66 +889,18 @@ function SetHome(url) {
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/post/12.html">
+                <a href="/post/18.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="耒阳SEO实战之本地网站建设选域名的方法">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="教你 DIY 为 WordPress 生成网站访问日志，告别后台下载">
                         
-                        <span class="card-title">耒阳SEO实战之本地网站建设选域名的方法</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2014-04-28
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E6%97%A7%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/" class="post-category">
-                                    旧博客迁移
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/SEO/">
-                        <span class="chip bg-color">SEO</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/post/9.html">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="wordpress 用函数自定义随机图片调用">
-                        
-                        <span class="card-title">wordpress 用函数自定义随机图片调用</span>
+                        <span class="card-title">教你 DIY 为 WordPress 生成网站访问日志，告别后台下载</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -906,7 +911,7 @@ function SetHome(url) {
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2014-04-15
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-05
                             </span>
                         <span class="publish-author">
                             
@@ -920,6 +925,7 @@ function SetHome(url) {
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -931,6 +937,47 @@ function SetHome(url) {
                         <span class="chip bg-color">PHP</span>
                     </a>
                     
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/post/17.html">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="2014/05/14 第四站 南漂广州，我来了！">
+                        
+                        <span class="card-title">2014/05/14 第四站 南漂广州，我来了！</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-05
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E6%97%A7%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/" class="post-category">
+                                    旧博客迁移
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
                 </div>
                 
             </div>
