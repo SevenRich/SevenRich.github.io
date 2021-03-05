@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="耒阳市车辆检测站网站制作日志, Chris Xu">
+    <meta name="keywords" content="wordpress 用 JS 封装淘宝客链接屏蔽蜘蛛, Chris Xu">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>耒阳市车辆检测站网站制作日志 | Chris Xu</title>
+    <title>wordpress 用 JS 封装淘宝客链接屏蔽蜘蛛 | Chris Xu</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -313,12 +313,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/21.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">耒阳市车辆检测站网站制作日志</h1>
+                    <h1 class="description center-align post-title">wordpress 用 JS 封装淘宝客链接屏蔽蜘蛛</h1>
                 </div>
             </div>
         </div>
@@ -434,12 +434,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/AspCMS/">
-                                <span class="chip bg-color">AspCMS</span>
+                            <a href="/tags/JavaScript/">
+                                <span class="chip bg-color">JavaScript</span>
                             </a>
                         
-                            <a href="/tags/SQLite/">
-                                <span class="chip bg-color">SQLite</span>
+                            <a href="/tags/WordPress/">
+                                <span class="chip bg-color">WordPress</span>
                             </a>
                         
                     </div>
@@ -463,7 +463,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2014-04-03
+                    2014-04-12
                 </div>
                 
 
@@ -477,14 +477,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    368
+                    508
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
 
@@ -507,19 +507,56 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>第一个写在自己blog的网站–耒阳市车辆检测站网站</p>
-<p>耒阳市车辆检测站是一家以服务为主的企业，所以网站需要的是为服务群体提供信息动态。主要信息动态的是检测动态，及检测完成情况。</p>
-<p>以及部分公司相关规定，及检测车辆相关流程手续及所需要的材料准备。等信息展示，信息下载为一体的服务性网站。</p>
-<p>针对相关的内容板块功能，设置相关的栏目如下：</p>
-<p>公司介绍设置了–公司简介栏目。</p>
-<p>公司公告内容展示设置了–公司动态栏目。</p>
-<p>公司检测结果跟踪设置了–温馨提示栏目。</p>
-<p>检测相关的规定及要求文件设置了–规章制度栏目。</p>
-<p>对检测及相关车辆违章，等便民服务查询功能设置了–便利服务栏目。</p>
-<p>针对车辆检测相关流程不熟悉的车友们，定制了一个流程图，方便车友们更直观的了解检测流程及相关规定–验车流程栏目。</p>
-<p>公司针对车友联系检测站服务平台，建立网上留言及咨询电话，邮箱–联系我们栏目。</p>
-<p>网站制作ing中，欢迎到时大家围观！感谢对耒阳SEO第一人bolg的支持！</p>
-<p>耒阳市车辆检测站 网站网址：待更新…</p>
+                <p>百度对垃圾淘客站有点不友好，导致淘客的生存空间很受限制。</p>
+<p>今天说的 JS 封装淘宝客链接是针对 wordpress 用 JS 封装淘宝客链接屏蔽蜘蛛。针对蜘蛛不能抓取 JS 里面的内容而做出的一种隐藏式跳转链接到淘宝客链接上去。达到对蜘蛛的友好。</p>
+<p>那么实现这个封装要怎么做呢？</p>
+<p>首先我们需要用JS代码来判断HTML给出的函数值来分别调用不同的URL。</p>
+<p>为此我们需要在模版文件夹中创建一个执行JS文件、一个调用赋值HTML文件。达到我们需要的封装效果。</p>
+<p>1、新建一个 JS 执行文件。命名 <code>loadurl.js</code> 。</p>
+<p>代码如下：</p>
+<pre class="line-numbers language-JavaScript" data-language="JavaScript"><code class="language-JavaScript">function onloads(){
+    var url = location.search;
+    if(url=="?p=1"){
+        location.href="淘宝客链接";
+    }
+    if(url=="?id=2"){
+        location.href="淘宝客链接";
+    }
+    if(url=="?p=3"){
+        location.href="淘宝客链接";
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>2、新建一个HTML赋值文件。命名 <code>loadurl.html</code> 。</p>
+<p>代码如下：</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span> <span class="token name">PUBLIC</span> <span class="token name">“-//W3C//DTD</span> <span class="token name">XHTML</span> <span class="token name">1.0</span> <span class="token name">Transitional//EN”</span> <span class="token name">“http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd”</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>”http://www.w3.org/1999/xhtml”</span> <span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>loading...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>”text/javascript”</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>”loadurl.js”</span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>前台模版调用的方法是：</p>
+<p>如果销售页有8个产品，那么依次安装顺序填充</p>
+<pre class="line-numbers language-JavaScript" data-language="JavaScript"><code class="language-JavaScript">if(url=="?p=修改数字"){
+location.href="修改链接";
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p><code>location.href=”淘宝客推广代码（建议用短链接）”；</code></p>
+<p>前台调用链接：<code>&lt;?php bloginfo(‘template_directory’); ?&gt;/loadurl.html?id=1</code>（对应数字）  依次类推。</p>
+<p>例如常见的表格布局案例展示：</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">align</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>”center”</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">target</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>”_blank”</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>”&lt;?php</span> <span class="token attr-name">bloginfo(‘template_directory’);</span> <span class="token attr-name">?</span><span class="token punctuation">&gt;</span></span>/loadurl.html?id=1″&gt;
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>”耒阳seo第一人</span> <span class="token attr-name">&amp;lt;第一名&amp;gt;”</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>”&lt;?php</span> <span class="token attr-name">bloginfo(‘template_directory’);</span> <span class="token attr-name">?</span><span class="token punctuation">&gt;</span></span>/ad/1.jpg” height=”200″ width=”200″
+    border=”0″&gt;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>希望对大家有帮助，如果想和我交朋友的可以加我QQ：408285845，一起交流心得。</p>
 
                 
             </div>
@@ -546,7 +583,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://sevenrich.github.io/post/1.html">https://sevenrich.github.io/post/1.html</a>
+                    <a href="https://sevenrich.github.io/post/7.html">https://sevenrich.github.io/post/7.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -584,12 +621,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/AspCMS/">
-                                    <span class="chip bg-color">AspCMS</span>
+                                <a href="/tags/JavaScript/">
+                                    <span class="chip bg-color">JavaScript</span>
                                 </a>
                             
-                                <a href="/tags/SQLite/">
-                                    <span class="chip bg-color">SQLite</span>
+                                <a href="/tags/WordPress/">
+                                    <span class="chip bg-color">WordPress</span>
                                 </a>
                             
                         </div>
@@ -760,7 +797,7 @@
         repo: 'gitalks',
         owner: 'SevenRich',
         admin: "SevenRich",
-        id: '2014-04-03T19-18-55',
+        id: '2014-04-12T19-47-30',
         proxy: 'https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
@@ -793,13 +830,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/post/3.html">
+                <a href="/post/8.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="我在耒阳做过的SEO网站优化经验">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="原来SEO原理如此简单易懂">
                         
-                        <span class="card-title">我在耒阳做过的SEO网站优化经验</span>
+                        <span class="card-title">原来SEO原理如此简单易懂</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -810,7 +847,7 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2014-04-05
+                            <i class="far fa-clock fa-fw icon-date"></i>2014-04-13
                         </span>
                         <span class="publish-author">
                             
@@ -839,16 +876,16 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/post/1.html">
+                <a href="/post/6.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="耒阳市车辆检测站网站制作日志">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="人人都想要的AspCms自定义幻灯片">
                         
-                        <span class="card-title">耒阳市车辆检测站网站制作日志</span>
+                        <span class="card-title">人人都想要的AspCms自定义幻灯片</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -859,7 +896,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2014-04-03
+                                <i class="far fa-clock fa-fw icon-date"></i>2014-04-10
                             </span>
                         <span class="publish-author">
                             
@@ -873,16 +910,11 @@
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
                     <a href="/tags/AspCMS/">
                         <span class="chip bg-color">AspCMS</span>
-                    </a>
-                    
-                    <a href="/tags/SQLite/">
-                        <span class="chip bg-color">SQLite</span>
                     </a>
                     
                 </div>

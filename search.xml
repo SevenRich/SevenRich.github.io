@@ -29,6 +29,241 @@
     
     
     <entry>
+      <title>耒阳SEO实战之本地网站建设选域名的方法</title>
+      <link href="/post/12.html"/>
+      <url>/post/12.html</url>
+      
+        <content type="html"><![CDATA[<p>域名是一个网站的名字！好名字当然让人印象深刻，同样好域名也同样让人印象深刻。搜索引擎也不例外！</p><p>下面大家跟着步骤一起行动。相信下面的行动一定能对自己选择域名及对后期网站的 SEO 优化有很大的帮助！</p><p>选择域名有以下几大要点需要大家注意：</p><h3 id="第一点：相关性"><a href="#第一点：相关性" class="headerlink" title="第一点：相关性"></a>第一点：相关性</h3><blockquote><p>（域名中最好能包含品牌的关键词）</p></blockquote><p>比如说笔者自己的个人博客用的是“耒阳SEO”这个关键词。笔者自己选择的域名是 “leiyangseo.com” ，这个就和所选择的关键词一样。</p><p>在这里的一样其实在关键词的排名中有一定的优先作用。虽然百度、google 等大型搜索引擎逐渐放弃对域名关键词的权重，但是相比之下优先参考价值是没的说的。</p><h3 id="第二点：便于记忆"><a href="#第二点：便于记忆" class="headerlink" title="第二点：便于记忆"></a>第二点：便于记忆</h3><blockquote><p>（域名品牌词如果被注册，最好选择相关的品牌域名）</p></blockquote><p>比如说笔者曾经玩过很久的一个社区网站“东莞长安网”，他们选择的域名是“dgcaw.com”这样的域名选择的是每个品牌名称的拼音首字母。很利于人记忆。</p><p>或者说如果你的品牌也是“东莞长安网”，但是首字母被注册，你就可以选择“广东东莞长安”“gddgca.com”。意思就是说可以在前面，或者后面加上一些阐述，使域名更符合记忆。</p><p>这样是不是也相关呢？也让域名方便记忆呢？</p><h3 id="第三点：简短"><a href="#第三点：简短" class="headerlink" title="第三点：简短"></a>第三点：简短</h3><blockquote><p>（域名长度要精炼）</p></blockquote><p>很多人注册域名不知道简短，一股脑的注册长度很长的。我还记得以前一个客户他把自己公司的名称全部打进去了。搞得域名长度超过20字节。那个域名说实话，真不好记。</p><p>那个例子来说吧：“耒阳七年网络科技有限公司”那我想全部写出来就是“lyqnwlkjyxgs.com”。试想一下你看到这个长度的域名，你能理解是什么意思？所以切忌域名的长度很重要。</p><h3 id="附上几点我选择域名的经验"><a href="#附上几点我选择域名的经验" class="headerlink" title="附上几点我选择域名的经验"></a>附上几点我选择域名的经验</h3><blockquote><p>第一点：是否需要备案？</p></blockquote><p>如果需要备案，而不需要用自己的身份。我就直接淘宝购买已经备案域名。</p><p>如果需要正规备案，就找一个能代备案的空间商。比如说西部数码就支持代备案。这样只需要递交相关资料就能完成备案。</p><p>如果不需要备案，就直接购买这个就不说了。</p><blockquote><p>第二点：抢注理想域名</p></blockquote><p>自己心仪的域名被人注册了怎么办？而且查看后知道快到期了。想要入手怎么办？当然要推荐大家一个好地方。</p><blockquote><p><code>爱名网</code> 一个抢注很牛的平台。</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 旧博客迁移 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> SEO </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>企业网站必备的一段加入收藏|设为主页通用HTML代码</title>
+      <link href="/post/10.html"/>
+      <url>/post/10.html</url>
+      
+        <content type="html"><![CDATA[<p>常常在企业网站上面看到有加入收藏 | 设为主页的按钮，可是一但到自己要用的时候发现代码老实写错，不能用！今天就把自己常用的通用的 html 代码分享给需要的朋友！</p><p>首先我们需要建立一个 JS 文件，来保证按钮的赋值的正常。</p><p>比如说建立一个 <code>zhuye.js</code> 文件，代码如下；</p><pre class="line-numbers language-JavaScript" data-language="JavaScript"><code class="language-JavaScript">//加入收藏function AddFavorite(sURL, sTitle) {    sURL = encodeURI(sURL);    try {          window.external.addFavorite(sURL, sTitle);      } catch (e) {          try{              window.sidebar.addPanel(sTitle, sURL, "");          } catch (e) {              alert("加入收藏失败，请使用Ctrl+D进行添加,或手动在浏览器里进行设置.");        }      }}//设为首页function SetHome(url) {    if (document.all) {        document.body.style.behavior='url(#default#homepage)';        document.body.setHomePage(url);    } else {        alert("您好,您的浏览器不支持自动设置页面为首页功能,请您手动在浏览器里设置该页面为首页!");    }}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>这里面的字是可以修改的，比如说加入收藏失败引导语，可以根据情况来自定义 DIY哦。</p><p>然后呢，我们当然是需要在页面上建立按钮。</p><p>可以是图片的，当然也可以是文字的，下面我会文字、图片的都分享一下代码。</p><p>文字版加入收藏 | 设为首页 代码如下；</p><pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>zhuye.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>SetHome(window.location)<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>javascript:void(0)<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>设为首页<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span> | <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>AddFavorite(window.location,document.title)<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>javascript:void(0)<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>加入收藏<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>中间通常用 “ | ”隔开，如果你的CSS定义了可以不用。</p><p>图片版加入收藏 | 设为首页 代码如下；</p><pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>zhuye.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>SetHome(window.location)<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>javascript:void(0)<span class="token punctuation">"</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>设为首页<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/images/home.png<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span> | <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>AddFavorite(window.location,document.title)<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>javascript:void(0)<span class="token punctuation">"</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>加入收藏<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/images/add.png<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>其实大家一对照就知道，其实文字和图片的差别就在于A标签中多了一个 TITLE属性，文字改成了IMG图片链接。</p><p>如果你想全部换成图片 “ | ”也是可以换成图片的，可以自己定义一个 IMG链接。这样就更能融合自己的网站内容，显得更加个性。</p><p>完整的一套代码如下；</p><pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token name">doctype</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>设置为首页,加入收藏功能<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>         <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>zhuye.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>SetHome(window.location)<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>javascript:void(0)<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>设为首页<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span> |         <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>AddFavorite(window.location,document.title)<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>javascript:void(0)<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>加入收藏<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>以上代码希望对同是网络技术人员，或者 SEO 爱好者有所帮助。我是耒阳许时衡，希望能和大家多多交流，探讨。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 旧博客迁移 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> HTML </tag>
+            
+            <tag> JavaScript </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>wordpress 用函数自定义随机图片调用</title>
+      <link href="/post/9.html"/>
+      <url>/post/9.html</url>
+      
+        <content type="html"><![CDATA[<p>wordpress 太强大了，每天去研究都有一些自己的心得。今天分享一下自己最近研究的一段代码。</p><p>在模板下的 <code>functions.php</code> 中添加一段支持外链缩略图的代码如下：</p><pre class="line-numbers language-PHP" data-language="PHP"><code class="language-PHP">&lt;?php //支持外链缩略图if ( function_exists('add_theme_support') )    add_theme_support('post-thumbnails');    function catch_first_image() {        global $post, $posts;        $first_img = '';        ob_start();        ob_end_clean();        $output = preg_match_all('/&lt;img.+src=[\'"]([^\'"]+)[\'"].*&gt;/i', $post-&gt;post_content, $matches);        $first_img = $matches [1] [0];        if (empty($first_img)) { //Defines a default image            $random = mt_rand(1,20);            echo get_bloginfo ( 'stylesheet_directory' );            echo '/images/random/'.$random.'.jpg';        }        return $first_img;    }?&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>其中有几个变量可以修改：</p><p>随机图片文件夹：</p><pre class="line-numbers language-PHP" data-language="PHP"><code class="language-PHP">/images/random/<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>这个是模板下的images下的random文件夹下的图片，如果你想直接放在模板下。可以直接修改为：</p><pre class="line-numbers language-PHP" data-language="PHP"><code class="language-PHP">/random/<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>随机图片的范围：</p><pre class="line-numbers language-PHP" data-language="PHP"><code class="language-PHP">$random = mt_rand(1,20);<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>如果你在你的random中放置了8张图片，图片名称是1.jpg，2.jpg…..8.jpg。</p><p>你就需要修改范围：</p><pre class="line-numbers language-PHP" data-language="PHP"><code class="language-PHP">$random = mt_rand(1,8);<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>其余的代码不建议修改，但是如果你的对编辑代码很有控制力。可以尝试修改某些细节。</p><p>除了函数中添加赋值语句，你还需要添加一个调去图片的缩略图文件，我们命名为thumbnail.php。</p><p>缩略图文件代码如下：</p><pre class="line-numbers language-PHP" data-language="PHP"><code class="language-PHP">&lt;?php if ( get_post_meta($post-&gt;ID, 'thumbnail', true) ) : ?&gt;    &lt;?php $image = get_post_meta($post-&gt;ID, 'thumbnail', true); ?&gt;    &lt;a href="&lt;?php the_permalink() ?&gt;" rel="bookmark" title="&lt;?php the_title(); ?&gt;"&gt;&lt;img src="&lt;?php echo $image; ?&gt;" alt="&lt;?php the_title(); ?&gt;"/&gt;&lt;/a&gt;&lt;?php else: ?&gt;&lt;!-- 截图 --&gt;    &lt;a href="&lt;?php the_permalink() ?&gt;" rel="bookmark" title="&lt;?php the_title(); ?&gt;"&gt;    &lt;?php if (has_post_thumbnail()) { the_post_thumbnail('thumbnail'); }    else { ?&gt;        &lt;img class="home-thumb" src="&lt;?php echo catch_first_image() ?&gt;" width="367px" height="240px" alt="&lt;?php the_title(); ?&gt;"/&gt;    &lt;?php } ?&gt;    &lt;/a&gt;&lt;?php endif; ?&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>前台调用使用代码如下：</p><pre class="line-numbers language-PHP" data-language="PHP"><code class="language-PHP">&lt;?php include( TEMPLATEPATH . '/thumbnail.php' ); ?&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>如果你想直接调用图片src链接，你可以用：</p><pre class="line-numbers language-PHP" data-language="PHP"><code class="language-PHP">&lt;?php echo catch_first_image() ?&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>或者直接调用文章中的图片；</p><pre class="line-numbers language-PHP" data-language="PHP"><code class="language-PHP">&lt;?php echo $image; ?&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 旧博客迁移 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> WordPress </tag>
+            
+            <tag> PHP </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>原来SEO原理如此简单易懂</title>
+      <link href="/post/8.html"/>
+      <url>/post/8.html</url>
+      
+        <content type="html"><![CDATA[<p>记得是在一次签到时间无意间和朋友说起你去搜索关于《秘密》一书去阅读一下。很是推荐他去阅读。结果这位兄台就一直在百度找“秘密”。始终没有找到自己需要的东西。</p><p>结果就跑过来问我，问我说我要他找的书是哪个！我不惊讶的说了一句：有问题上百度。百度上面会有你的要找的东西。他很是不解。</p><p>我就说了：</p><p>第一，你百度寻找你需要的东西，是不是要搜索引擎给你最佳答案？</p><p>第二，搜索引擎给你排名靠在前面的网页一般都是用户体验很高的网站，和你要找的关键字信息一般是很配的对不？</p><p>第三，你点击打开你认为是你要找的信息的网页，是不是就发生了点击？</p><p>第四，你看到这个页面不是你需要的你是不是会关闭，这个网页对你来说就是体验不好？</p><p>其实自己去百度去寻找自己需要的东西就已经发生了 SEO 原理知识。</p><p>用户需要解决的问题—–用户在搜索引擎中寻找答案—–根据搜索引擎排名系统提供的网页—-找到理想的答案。</p><p>其实这条路线就已经是最基础的 SEO 原理。很多人都不知道什么是 SEO 原理，什么是用户体验。其实不要去想当然，你怎么用搜索引擎，其他人一般也怎么用。因为这个就是人的共性。只有理解了用户行为才能有针对性的服务某些特定的用户。帮助某些特定的用户解决问题。</p><p>分享自己经常找的资料的网站：</p><pre class="line-numbers language-html" data-language="html"><code class="language-html">文库分享    wenku.baidu.com爱问分享    ishare.iask.sina.com.cn<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 旧博客迁移 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> SEO </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>wordpress 用 JS 封装淘宝客链接屏蔽蜘蛛</title>
+      <link href="/post/7.html"/>
+      <url>/post/7.html</url>
+      
+        <content type="html"><![CDATA[<p>百度对垃圾淘客站有点不友好，导致淘客的生存空间很受限制。</p><p>今天说的 JS 封装淘宝客链接是针对 wordpress 用 JS 封装淘宝客链接屏蔽蜘蛛。针对蜘蛛不能抓取 JS 里面的内容而做出的一种隐藏式跳转链接到淘宝客链接上去。达到对蜘蛛的友好。</p><p>那么实现这个封装要怎么做呢？</p><p>首先我们需要用JS代码来判断HTML给出的函数值来分别调用不同的URL。</p><p>为此我们需要在模版文件夹中创建一个执行JS文件、一个调用赋值HTML文件。达到我们需要的封装效果。</p><p>1、新建一个 JS 执行文件。命名 <code>loadurl.js</code> 。</p><p>代码如下：</p><pre class="line-numbers language-JavaScript" data-language="JavaScript"><code class="language-JavaScript">function onloads(){    var url = location.search;    if(url=="?p=1"){        location.href="淘宝客链接";    }    if(url=="?id=2"){        location.href="淘宝客链接";    }    if(url=="?p=3"){        location.href="淘宝客链接";    }}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>2、新建一个HTML赋值文件。命名 <code>loadurl.html</code> 。</p><p>代码如下：</p><pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span> <span class="token name">PUBLIC</span> <span class="token name">“-//W3C//DTD</span> <span class="token name">XHTML</span> <span class="token name">1.0</span> <span class="token name">Transitional//EN”</span> <span class="token name">“http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd”</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>”http://www.w3.org/1999/xhtml”</span> <span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>loading...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>”text/javascript”</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>”loadurl.js”</span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>前台模版调用的方法是：</p><p>如果销售页有8个产品，那么依次安装顺序填充</p><pre class="line-numbers language-JavaScript" data-language="JavaScript"><code class="language-JavaScript">if(url=="?p=修改数字"){location.href="修改链接";}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p><code>location.href=”淘宝客推广代码（建议用短链接）”；</code></p><p>前台调用链接：<code>&lt;?php bloginfo(‘template_directory’); ?&gt;/loadurl.html?id=1</code>（对应数字）  依次类推。</p><p>例如常见的表格布局案例展示：</p><pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">align</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>”center”</span><span class="token punctuation">&gt;</span></span>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">target</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>”_blank”</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>”&lt;?php</span> <span class="token attr-name">bloginfo(‘template_directory’);</span> <span class="token attr-name">?</span><span class="token punctuation">&gt;</span></span>/loadurl.html?id=1″&gt;    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>”耒阳seo第一人</span> <span class="token attr-name">&amp;lt;第一名&amp;gt;”</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>”&lt;?php</span> <span class="token attr-name">bloginfo(‘template_directory’);</span> <span class="token attr-name">?</span><span class="token punctuation">&gt;</span></span>/ad/1.jpg” height=”200″ width=”200″    border=”0″&gt;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>希望对大家有帮助，如果想和我交朋友的可以加我QQ：408285845，一起交流心得。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 旧博客迁移 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JavaScript </tag>
+            
+            <tag> WordPress </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>人人都想要的AspCms自定义幻灯片</title>
+      <link href="/post/6.html"/>
+      <url>/post/6.html</url>
+      
+        <content type="html"><![CDATA[<p>近期接到一个项目，需要用 ASPCMS 做一个网站。无赖 ASPCMS 的默认幻灯片不能满足需要需要就自己集合在网上找的一些代码自定义了一个幻灯片！分享给需要的人，希望有帮助！</p><p>在根目录下的 <code>/inc/</code> 文件夹中找到 <code>AspCms_MainClass.asp</code> 这个文件</p><p>利用 <code>Ctrl+F</code> 查找 <code>Function getSlide</code> （记得区分大小写）</p><p>在 <code>end Function</code> 上分方加入以下代码：</p><pre class="line-numbers language-AspCMS" data-language="AspCMS"><code class="language-AspCMS">Dim str1,Str2,str3str1 =Split(slideImgs,",") str2 =Split(slideLinks,",")str3=Split(slideTexts,",")Dim jcontent=replaceStr(content,"{aspcms:SlideLen}",ubound(str1))Dim ifor i=0 to ubound(str1)content=replaceStr(content,"{aspcms:SlideImg"&amp;i&amp;"}",str1(i))nextDim nfor n=0 to ubound(str2)content=replaceStr(content,"{aspcms:SlideLink"&amp;n&amp;"}",str2(n))nextDim mfor m=0 to ubound(str3)content=replaceStr(content,"{aspcms:SlideText"&amp;m&amp;"}",str3(m))next<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>注意：要在 <code>Function getSlide</code> 这个函数的结束 <code>end Function</code> 上方</p><p>然后前台调用方式</p><pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>{aspcms:SlideLink0}<span class="token punctuation">"</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>{aspcms:SlideText0}<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>{aspcms:SlideImg0}<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>依次调用，修改0为1，为2….</p><p>0表示默认的第一张图片/第一个链接/第一个标题。默认0是第一计数。</p><p>然后就是自己把 <code>&lt;a href=""&gt;&lt;/a&gt;</code> 融合到自己喜欢的幻灯片中。测试通过显示正常，就完成了自定义幻灯片！</p><p>如果你用是的 <code>FALSH+XML</code> 估计你的自定义会受到影响，那就直接用XML决定路径调用吧！最好自定义的幻灯片是 <code>DIV</code> 的，这样比较好融合和修改！</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 旧博客迁移 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> AspCMS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>耒阳市车辆检测站网站制作预览图发布</title>
+      <link href="/post/5.html"/>
+      <url>/post/5.html</url>
+      
+        <content type="html"><![CDATA[<p>耒阳市车辆检测站网站制作预览图发布</p><p>首页预览图：</p><p><a href="%E9%A6%96%E9%A1%B5.jpg"></a>{图片过期}</p><p>列表页预览图：</p><p><a href="%E5%88%97%E8%A1%A8%E9%A1%B5.jpg"></a>{图片过期}</p><p>文章页预览图：</p><p><a href="%E6%96%87%E7%AB%A0%E9%A1%B5.jpg"></a>{图片过期}</p><p>单页预览图</p><p><a href="%E5%8D%95%E9%A1%B5.jpg"></a>{图片过期}</p><p>留言预览图：</p><p><a href="%E7%95%99%E8%A8%80%E9%A1%B5.jpg"></a>{图片过期}</p><p>还在对细节做一些调整,使页面更加协调!</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 旧博客迁移 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> AspCMS </tag>
+            
+            <tag> 企业建站 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>wordpress与企业网站的完美融合</title>
+      <link href="/post/4.html"/>
+      <url>/post/4.html</url>
+      
+        <content type="html"><![CDATA[<p>wordpress 是一个开源的 blog 系统，同时也是一个强大的CMS文章系统。对用 wordpress 做企业站是一个很好的选择。我本人比较推荐 wordpress 制作企业站。</p><p>在耒阳，一眼看过去很多 ASPcms 内容管理系统，不是说不好！是出于安全及后期维护产本上来说！</p><p>安全系数说：aspcms 采用的是 ASP 语言编辑而成，wordpress 采用的是 PHP 语言编辑而成。在安全系数一看就明白了！很明显的就是 PHP 的安全系数高！</p><p>后期维护产本上说：wordpress 使用这有几十万使用者，很多研究 wordpress 的公司及开发人员。对 wordpress 的维护很好找到要找的结果。及特殊问题的处理方案。相对 aspcms 百度相关的教程及问题的解决也很多没答案。对新人来说这个就是最大的弊端。但是 aspcms 对网络公司来说还是很好的开源企业网站。唯一不好的就是上手慢。</p><p>wordpress 开发的企业公司很多都是很有名的比如百度的 mux、淘宝的 ued、 李开复的创新工厂等等…. wordpress 与企业网站的完美融合，也将是后期企业网络公司转型 PHP 首选程序。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 旧博客迁移 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 企业建站 </tag>
+            
+            <tag> WordPress </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>我在耒阳做过的SEO网站优化经验</title>
+      <link href="/post/3.html"/>
+      <url>/post/3.html</url>
+      
+        <content type="html"><![CDATA[<p>我在耒阳打拼已经有三年之久，期初的自己在家闭门造车。到现在的在网络公司上班。在自己手上也做过几十个耒阳当地、外地的企业网站。想想在耒阳自己经手的网站就不敢拿出来说。但是作为自己的经验，也做为自己的客户见证，我就拿出来给大家作下参考。</p><p>要说我也不知道从哪里说起，我在耒阳做过的SEO网站优化经验，就拿一个教育网站来说吧！这个网站是我在耒阳制作的一个教育类网站。</p><p>湘耒职业技术学校  网址：<a href="http://www.xl0734.com/">www.xl0734.com</a></p><p>这个网站在百度、360等国内大型搜索引擎关键词：湘耒都是第一名。</p><p>百度排名展示：</p><p><a href="baidu.jpg"></a>{图片已经过期}</p><p>360搜索排名展示：</p><p><a href="360.jpg"></a>{图片已经过期}</p><p>排名稳定的从2013年到现在的2014年，网站结构合理，布局符合SEO网站优化特点。对后续排名的稳定有着决定性的垫底坚持。很多做网站的人就知道直接从网上再找源码，殊不知源码套上去和复制、仿冒站是一个概念。导致排名不佳，收录不畅。</p><p>我在耒阳做过的SEO网站优化经验总的就几句话：</p><p>第一句：什么事情都不是很难，只是你不知道方法。</p><p>第二句：舍不得投资在自己该花钱的地方，后期花的钱更多。</p><p>第三句：你不知道的，别人知道的，你就应该花钱购买别人的知识。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 旧博客迁移 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> SEO </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>耒阳市车辆检测站网站制作日志</title>
       <link href="/post/1.html"/>
       <url>/post/1.html</url>

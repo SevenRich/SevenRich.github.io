@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="耒阳市车辆检测站网站制作日志, Chris Xu">
+    <meta name="keywords" content="人人都想要的AspCms自定义幻灯片, Chris Xu">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>耒阳市车辆检测站网站制作日志 | Chris Xu</title>
+    <title>人人都想要的AspCms自定义幻灯片 | Chris Xu</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -313,12 +313,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/21.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">耒阳市车辆检测站网站制作日志</h1>
+                    <h1 class="description center-align post-title">人人都想要的AspCms自定义幻灯片</h1>
                 </div>
             </div>
         </div>
@@ -438,10 +438,6 @@
                                 <span class="chip bg-color">AspCMS</span>
                             </a>
                         
-                            <a href="/tags/SQLite/">
-                                <span class="chip bg-color">SQLite</span>
-                            </a>
-                        
                     </div>
                     
                 </div>
@@ -463,7 +459,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2014-04-03
+                    2014-04-10
                 </div>
                 
 
@@ -477,7 +473,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    368
+                    375
                 </div>
                 
 
@@ -507,19 +503,37 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>第一个写在自己blog的网站–耒阳市车辆检测站网站</p>
-<p>耒阳市车辆检测站是一家以服务为主的企业，所以网站需要的是为服务群体提供信息动态。主要信息动态的是检测动态，及检测完成情况。</p>
-<p>以及部分公司相关规定，及检测车辆相关流程手续及所需要的材料准备。等信息展示，信息下载为一体的服务性网站。</p>
-<p>针对相关的内容板块功能，设置相关的栏目如下：</p>
-<p>公司介绍设置了–公司简介栏目。</p>
-<p>公司公告内容展示设置了–公司动态栏目。</p>
-<p>公司检测结果跟踪设置了–温馨提示栏目。</p>
-<p>检测相关的规定及要求文件设置了–规章制度栏目。</p>
-<p>对检测及相关车辆违章，等便民服务查询功能设置了–便利服务栏目。</p>
-<p>针对车辆检测相关流程不熟悉的车友们，定制了一个流程图，方便车友们更直观的了解检测流程及相关规定–验车流程栏目。</p>
-<p>公司针对车友联系检测站服务平台，建立网上留言及咨询电话，邮箱–联系我们栏目。</p>
-<p>网站制作ing中，欢迎到时大家围观！感谢对耒阳SEO第一人bolg的支持！</p>
-<p>耒阳市车辆检测站 网站网址：待更新…</p>
+                <p>近期接到一个项目，需要用 ASPCMS 做一个网站。无赖 ASPCMS 的默认幻灯片不能满足需要需要就自己集合在网上找的一些代码自定义了一个幻灯片！分享给需要的人，希望有帮助！</p>
+<p>在根目录下的 <code>/inc/</code> 文件夹中找到 <code>AspCms_MainClass.asp</code> 这个文件</p>
+<p>利用 <code>Ctrl+F</code> 查找 <code>Function getSlide</code> （记得区分大小写）</p>
+<p>在 <code>end Function</code> 上分方加入以下代码：</p>
+<pre class="line-numbers language-AspCMS" data-language="AspCMS"><code class="language-AspCMS">Dim str1,Str2,str3
+str1 =Split(slideImgs,",") 
+str2 =Split(slideLinks,",")
+str3=Split(slideTexts,",")
+Dim j
+content=replaceStr(content,"{aspcms:SlideLen}",ubound(str1))
+Dim i
+for i=0 to ubound(str1)
+content=replaceStr(content,"{aspcms:SlideImg"&amp;i&amp;"}",str1(i))
+next
+Dim n
+for n=0 to ubound(str2)
+content=replaceStr(content,"{aspcms:SlideLink"&amp;n&amp;"}",str2(n))
+next
+Dim m
+for m=0 to ubound(str3)
+content=replaceStr(content,"{aspcms:SlideText"&amp;m&amp;"}",str3(m))
+next<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>注意：要在 <code>Function getSlide</code> 这个函数的结束 <code>end Function</code> 上方</p>
+<p>然后前台调用方式</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>{aspcms:SlideLink0}<span class="token punctuation">"</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>{aspcms:SlideText0}<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>{aspcms:SlideImg0}<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>依次调用，修改0为1，为2….</p>
+<p>0表示默认的第一张图片/第一个链接/第一个标题。默认0是第一计数。</p>
+<p>然后就是自己把 <code>&lt;a href=""&gt;&lt;/a&gt;</code> 融合到自己喜欢的幻灯片中。测试通过显示正常，就完成了自定义幻灯片！</p>
+<p>如果你用是的 <code>FALSH+XML</code> 估计你的自定义会受到影响，那就直接用XML决定路径调用吧！最好自定义的幻灯片是 <code>DIV</code> 的，这样比较好融合和修改！</p>
 
                 
             </div>
@@ -546,7 +560,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://sevenrich.github.io/post/1.html">https://sevenrich.github.io/post/1.html</a>
+                    <a href="https://sevenrich.github.io/post/6.html">https://sevenrich.github.io/post/6.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -586,10 +600,6 @@
                             
                                 <a href="/tags/AspCMS/">
                                     <span class="chip bg-color">AspCMS</span>
-                                </a>
-                            
-                                <a href="/tags/SQLite/">
-                                    <span class="chip bg-color">SQLite</span>
                                 </a>
                             
                         </div>
@@ -760,7 +770,7 @@
         repo: 'gitalks',
         owner: 'SevenRich',
         admin: "SevenRich",
-        id: '2014-04-03T19-18-55',
+        id: '2014-04-10T19-41-49',
         proxy: 'https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
@@ -793,13 +803,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/post/3.html">
+                <a href="/post/7.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="我在耒阳做过的SEO网站优化经验">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="wordpress 用 JS 封装淘宝客链接屏蔽蜘蛛">
                         
-                        <span class="card-title">我在耒阳做过的SEO网站优化经验</span>
+                        <span class="card-title">wordpress 用 JS 封装淘宝客链接屏蔽蜘蛛</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -810,7 +820,7 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2014-04-05
+                            <i class="far fa-clock fa-fw icon-date"></i>2014-04-12
                         </span>
                         <span class="publish-author">
                             
@@ -827,8 +837,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/SEO/">
-                        <span class="chip bg-color">SEO</span>
+                    <a href="/tags/JavaScript/">
+                        <span class="chip bg-color">JavaScript</span>
+                    </a>
+                    
+                    <a href="/tags/WordPress/">
+                        <span class="chip bg-color">WordPress</span>
                     </a>
                     
                 </div>
@@ -839,16 +853,16 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/post/1.html">
+                <a href="/post/5.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="耒阳市车辆检测站网站制作日志">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="耒阳市车辆检测站网站制作预览图发布">
                         
-                        <span class="card-title">耒阳市车辆检测站网站制作日志</span>
+                        <span class="card-title">耒阳市车辆检测站网站制作预览图发布</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -859,7 +873,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2014-04-03
+                                <i class="far fa-clock fa-fw icon-date"></i>2014-04-08
                             </span>
                         <span class="publish-author">
                             
@@ -873,7 +887,6 @@
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
@@ -881,8 +894,8 @@
                         <span class="chip bg-color">AspCMS</span>
                     </a>
                     
-                    <a href="/tags/SQLite/">
-                        <span class="chip bg-color">SQLite</span>
+                    <a href="/tags/%E4%BC%81%E4%B8%9A%E5%BB%BA%E7%AB%99/">
+                        <span class="chip bg-color">企业建站</span>
                     </a>
                     
                 </div>
