@@ -1,6 +1,6 @@
 ---
 title: Hello World
-abbrlink: 1
+abbrlink: Hello
 categories: uncategorized
 tags: hello
 ---
