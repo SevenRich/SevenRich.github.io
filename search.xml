@@ -5,8 +5,8 @@
     
     <entry>
       <title>Hello World</title>
-      <link href="2021/hello-world/"/>
-      <url>2021/hello-world/</url>
+      <link href="hello/"/>
+      <url>hello/</url>
       
         <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo new "My New Post"<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
       
@@ -30,8 +30,8 @@
     
     <entry>
       <title>耒阳市车辆检测站网站制作日志</title>
-      <link href="2014/1/"/>
-      <url>2014/1/</url>
+      <link href="/post/1/"/>
+      <url>/post/1/</url>
       
         <content type="html"><![CDATA[<p>第一个写在自己blog的网站–耒阳市车辆检测站网站</p><p>耒阳市车辆检测站是一家以服务为主的企业，所以网站需要的是为服务群体提供信息动态。主要信息动态的是检测动态，及检测完成情况。</p><p>以及部分公司相关规定，及检测车辆相关流程手续及所需要的材料准备。等信息展示，信息下载为一体的服务性网站。</p><p>针对相关的内容板块功能，设置相关的栏目如下：</p><p>公司介绍设置了–公司简介栏目。</p><p>公司公告内容展示设置了–公司动态栏目。</p><p>公司检测结果跟踪设置了–温馨提示栏目。</p><p>检测相关的规定及要求文件设置了–规章制度栏目。</p><p>对检测及相关车辆违章，等便民服务查询功能设置了–便利服务栏目。</p><p>针对车辆检测相关流程不熟悉的车友们，定制了一个流程图，方便车友们更直观的了解检测流程及相关规定–验车流程栏目。</p><p>公司针对车友联系检测站服务平台，建立网上留言及咨询电话，邮箱–联系我们栏目。</p><p>网站制作ing中，欢迎到时大家围观！感谢对耒阳SEO第一人bolg的支持！</p><p>耒阳市车辆检测站 网站网址：待更新…</p>]]></content>
       
@@ -45,7 +45,9 @@
       
         <tags>
             
-            <tag> aspcms </tag>
+            <tag> AspCMS </tag>
+            
+            <tag> SQLite </tag>
             
         </tags>
       
