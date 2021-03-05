@@ -6,7 +6,7 @@
   <link href="https://sevenrich.github.io/atom.xml" rel="self"/>
   
   <link href="https://sevenrich.github.io/"/>
-  <updated>2021-03-05T11:05:01.385Z</updated>
+  <updated>2021-03-05T11:22:48.067Z</updated>
   <id>https://sevenrich.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://sevenrich.github.io/2021/hello-world/"/>
     <id>https://sevenrich.github.io/2021/hello-world/</id>
     <published>2021-03-05T06:52:07.726Z</published>
-    <updated>2021-03-05T11:05:01.385Z</updated>
+    <updated>2021-03-05T11:22:48.067Z</updated>
     
     
       
@@ -38,6 +38,33 @@
     
     
     <category term="hello" scheme="https://sevenrich.github.io/tags/hello/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>耒阳市车辆检测站网站制作日志</title>
+    <link href="https://sevenrich.github.io/2014/1/"/>
+    <id>https://sevenrich.github.io/2014/1/</id>
+    <published>2014-04-03T11:18:55.000Z</published>
+    <updated>2021-03-05T11:22:45.443Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;第一个写在自己blog的网站–耒阳市车辆检测站网站&lt;/p&gt;
+&lt;p&gt;耒阳市车辆检测站是一家以服务为主的企业，所以网站需要的是为服务群体提供信息动态。主要信息动态的是检测动态，及检测完成情况。&lt;/p&gt;
+&lt;p&gt;以及部分公司相关规定，及检测车辆相关流程手续及所需要的材料准备。等信息</summary>
+        
+      
+    
+    
+    
+    <category term="旧博客迁移" scheme="https://sevenrich.github.io/categories/%E6%97%A7%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
+    
+    
+    <category term="aspcms" scheme="https://sevenrich.github.io/tags/aspcms/"/>
     
   </entry>
   
