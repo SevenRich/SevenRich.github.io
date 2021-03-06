@@ -107,8 +107,7 @@ theme: matery
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: 'git'
-  # repo: git@github.com:SevenRich/SevenRich.github.io.git
-  repo: git@gitee.com:SevenRich/SevenRich.github.io.git
+  repo: git@github.com:SevenRich/SevenRich.github.io.git
   branch: main
 
 # emoji 表情支持
