@@ -3,11 +3,11 @@
   <title>Chris Xu</title>
   
   <subtitle>个人博客</subtitle>
-  <link href="https://sevenrich.gitee.io/atom.xml" rel="self"/>
+  <link href="https://sevenrich.github.io/atom.xml" rel="self"/>
   
-  <link href="https://sevenrich.gitee.io/"/>
-  <updated>2021-03-05T12:58:19.149Z</updated>
-  <id>https://sevenrich.gitee.io/</id>
+  <link href="https://sevenrich.github.io/"/>
+  <updated>2021-03-08T03:36:12.504Z</updated>
+  <id>https://sevenrich.github.io/</id>
   
   <author>
     <name>Chris Xu</name>
@@ -17,9 +17,536 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>wget 命令下载 ftp 整站数据无压力</title>
+    <link href="https://sevenrich.github.io/post/38.html"/>
+    <id>https://sevenrich.github.io/post/38.html</id>
+    <published>2015-03-30T03:24:10.000Z</published>
+    <updated>2021-03-08T03:36:12.504Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;好久没有玩&lt;code&gt;Linux&lt;/code&gt;，感觉一玩&lt;code&gt;Linux&lt;/code&gt;,整个人都不好了。&lt;/p&gt;
+&lt;p&gt;不久前接到一单，需要搬空间到&lt;code&gt;VPS&lt;/code&gt;上去。开始我还觉得简单，不就一&lt;code&gt;ftp&lt;/code&gt;?结果10G数据搞得我整个</summary>
+        
+      
+    
+    
+    
+    <category term="旧博客迁移" scheme="https://sevenrich.github.io/categories/%E6%97%A7%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
+    
+    
+    <category term="Linux" scheme="https://sevenrich.github.io/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>EcShop出现的报错问题及解决方案</title>
+    <link href="https://sevenrich.github.io/post/37.html"/>
+    <id>https://sevenrich.github.io/post/37.html</id>
+    <published>2015-03-20T02:56:17.000Z</published>
+    <updated>2021-03-08T03:23:38.526Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;问题一：商城首页&quot;&gt;&lt;a href=&quot;#问题一：商城首页&quot; class=&quot;headerlink&quot; title=&quot;问题一：商城首页&quot;&gt;&lt;/a&gt;问题一：商城首页&lt;/h3&gt;&lt;p&gt;报 错&lt;/p&gt;
+&lt;pre class=&quot;line-numbers</summary>
+        
+      
+    
+    
+    
+    <category term="旧博客迁移" scheme="https://sevenrich.github.io/categories/%E6%97%A7%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
+    
+    
+    <category term="PHP" scheme="https://sevenrich.github.io/tags/PHP/"/>
+    
+    <category term="ECShop" scheme="https://sevenrich.github.io/tags/ECShop/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>网站百度快照日期怎么没了，你急不急？</title>
+    <link href="https://sevenrich.github.io/post/36.html"/>
+    <id>https://sevenrich.github.io/post/36.html</id>
+    <published>2015-03-06T02:54:58.000Z</published>
+    <updated>2021-03-08T02:55:59.986Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;网站百度快照日期怎么没了呢?这不是要我们这些做&lt;code&gt;SEO&lt;/code&gt;的人急么？&lt;/p&gt;
+&lt;p&gt;不过还好，这个急也是没有用的。因为相信很多站长和我一样发现了自己的网站已经没有了百度快照日期了。想到这里我就想到曾经百度一再声明的：“网站快照的更新频率与权重没任何关系”</summary>
+        
+      
+    
+    
+    
+    <category term="旧博客迁移" scheme="https://sevenrich.github.io/categories/%E6%97%A7%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
+    
+    
+    <category term="SEO" scheme="https://sevenrich.github.io/tags/SEO/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>能从基础走到大咖，这就是要短时间高强度练习</title>
+    <link href="https://sevenrich.github.io/post/35.html"/>
+    <id>https://sevenrich.github.io/post/35.html</id>
+    <published>2015-01-20T02:50:09.000Z</published>
+    <updated>2021-03-08T02:54:12.776Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;为了不让自己松散的对待2014年的最后一个月，我要来一场说学就学的&lt;code&gt;Php&lt;/code&gt;之旅。&lt;/p&gt;
+&lt;p&gt;先上自己写的MSG，留言本第一版，后续不断升级，来强化自己的&lt;code&gt;Php&lt;/code&gt;应用思维。&lt;/p&gt;
+&lt;p&gt;不说多，上图。&lt;/p&gt;
+&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="旧博客迁移" scheme="https://sevenrich.github.io/categories/%E6%97%A7%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
+    
+    
+    <category term="学习成长" scheme="https://sevenrich.github.io/tags/%E5%AD%A6%E4%B9%A0%E6%88%90%E9%95%BF/"/>
+    
+    <category term="PHP" scheme="https://sevenrich.github.io/tags/PHP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>有梦，就要让他能得到实现！要不就是白日梦！</title>
+    <link href="https://sevenrich.github.io/post/34.html"/>
+    <id>https://sevenrich.github.io/post/34.html</id>
+    <published>2015-01-19T02:47:43.000Z</published>
+    <updated>2021-03-08T02:49:35.166Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;学习Php有一段时间了，没有过多的想法，还在实践中。想想当初的自己，回头看看自己留下的脚步，还真是一个一个的很深。&lt;/p&gt;
+&lt;p&gt;没有大神的帮助，但有十八哥的公益学堂。没有牛逼的指导，但是有一群自学的爱好者。&lt;/p&gt;
+&lt;p&gt;没有精通的技术，但是有一颗不放弃的心。我是凡人，就</summary>
+        
+      
+    
+    
+    
+    <category term="旧博客迁移" scheme="https://sevenrich.github.io/categories/%E6%97%A7%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
+    
+    
+    <category term="学习成长" scheme="https://sevenrich.github.io/tags/%E5%AD%A6%E4%B9%A0%E6%88%90%E9%95%BF/"/>
+    
+    <category term="PHP" scheme="https://sevenrich.github.io/tags/PHP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Php学习工具Sublime Text直接运行Php（配置教程）</title>
+    <link href="https://sevenrich.github.io/post/33.html"/>
+    <id>https://sevenrich.github.io/post/33.html</id>
+    <published>2015-01-08T02:43:09.000Z</published>
+    <updated>2021-03-08T02:46:45.749Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;进修好长时间了，更新一下自己的动态。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Sublime</summary>
+        
+      
+    
+    
+    
+    <category term="旧博客迁移" scheme="https://sevenrich.github.io/categories/%E6%97%A7%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
+    
+    
+    <category term="PHP" scheme="https://sevenrich.github.io/tags/PHP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>现实总是那么直白，没有机会的救赎</title>
+    <link href="https://sevenrich.github.io/post/32.html"/>
+    <id>https://sevenrich.github.io/post/32.html</id>
+    <published>2014-12-17T02:39:47.000Z</published>
+    <updated>2021-03-08T02:42:33.956Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;面对自己的人生目标，有人想过那只是想想。但马云想到做到了。梦想是要有的，万一实现了呢？&lt;/p&gt;
+&lt;p&gt;简明的目标，坚持前行就好。没有过多的犹豫，徘徊。再怀疑也只会是原地踏步。不是前行。&lt;/p&gt;
+&lt;p&gt;不争不求的生活是安逸，但是这个不是我想要的生活。也许你会说我懒了，或是累了</summary>
+        
+      
+    
+    
+    
+    <category term="旧博客迁移" scheme="https://sevenrich.github.io/categories/%E6%97%A7%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
+    
+    
+    <category term="学习成长" scheme="https://sevenrich.github.io/tags/%E5%AD%A6%E4%B9%A0%E6%88%90%E9%95%BF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【时时警醒】下半年的安排，一次全身心的洗礼</title>
+    <link href="https://sevenrich.github.io/post/31.html"/>
+    <id>https://sevenrich.github.io/post/31.html</id>
+    <published>2014-11-03T02:37:58.000Z</published>
+    <updated>2021-03-08T02:39:11.248Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;离开好久，终于身体恢复很多了。&lt;/p&gt;
+&lt;p&gt;身体与我抗争，最后我用了一个月，喝了两次中药调理，渐渐身体恢复很多了。&lt;/p&gt;
+&lt;p&gt;人总是在自己失去后才知道其珍贵，身体很脆弱，人命同样很脆弱。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;下期的工作安排。（技能）&lt;/p&gt;
+&lt;/b</summary>
+        
+      
+    
+    
+    
+    <category term="旧博客迁移" scheme="https://sevenrich.github.io/categories/%E6%97%A7%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
+    
+    
+    <category term="学习成长" scheme="https://sevenrich.github.io/tags/%E5%AD%A6%E4%B9%A0%E6%88%90%E9%95%BF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>驾考秘籍专卖网做整套SEO营销方案近期遇到的问题</title>
+    <link href="https://sevenrich.github.io/post/30.html"/>
+    <id>https://sevenrich.github.io/post/30.html</id>
+    <published>2014-09-15T02:25:41.000Z</published>
+    <updated>2021-03-08T02:34:46.133Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;说的驾考秘籍专卖网，真的是百感交集啊。一个被黑的域名，从今1个多月没更新首页快照，就一个域名出售的页面急的我团团转。&lt;/p&gt;
+&lt;p&gt;现在大把垃圾链接让我伤身。SEOer的SEO路让我还真的是问题不断。&lt;/p&gt;
+&lt;p&gt;不过话说回来了，没有问题又怎么让自己成长呢？&lt;/p&gt;
+&lt;p</summary>
+        
+      
+    
+    
+    
+    <category term="旧博客迁移" scheme="https://sevenrich.github.io/categories/%E6%97%A7%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
+    
+    
+    <category term="SEO" scheme="https://sevenrich.github.io/tags/SEO/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SEO中高质量的反向链接价值不容小觑</title>
+    <link href="https://sevenrich.github.io/post/29.html"/>
+    <id>https://sevenrich.github.io/post/29.html</id>
+    <published>2014-09-04T02:25:50.000Z</published>
+    <updated>2021-03-08T02:28:36.858Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;高质量的反向链接价值不容小觑。一个曾经工作10年的SEOer说过：一个高质量的反向链接的价值超过100个垃圾链接。&lt;/p&gt;
+&lt;p&gt;这个话一点也不会说假。我自己的网站就是一个很好的例子。只有三个友情链接，但是很稳步的在耒阳SEO这个关键词上排名。&lt;/p&gt;
+&lt;p&gt;有一个比我更努</summary>
+        
+      
+    
+    
+    
+    <category term="旧博客迁移" scheme="https://sevenrich.github.io/categories/%E6%97%A7%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
+    
+    
+    <category term="SEO" scheme="https://sevenrich.github.io/tags/SEO/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>我的QQ群实战网络营销五步走</title>
+    <link href="https://sevenrich.github.io/post/28.html"/>
+    <id>https://sevenrich.github.io/post/28.html</id>
+    <published>2014-08-27T02:21:42.000Z</published>
+    <updated>2021-03-08T02:35:25.929Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;QQ群分享自己的经验是一个很好的引流的渠道，这个一开始我就使用过。但是应用实战网络营销导致网站流量异常，不知是该喜还是该忧？&lt;/p&gt;
+&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="旧博客迁移" scheme="https://sevenrich.github.io/categories/%E6%97%A7%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
+    
+    
+    <category term="学习成长" scheme="https://sevenrich.github.io/tags/%E5%AD%A6%E4%B9%A0%E6%88%90%E9%95%BF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>谈谈对耒阳网站建设的想法</title>
+    <link href="https://sevenrich.github.io/post/27.html"/>
+    <id>https://sevenrich.github.io/post/27.html</id>
+    <published>2014-08-26T02:14:39.000Z</published>
+    <updated>2021-03-08T02:21:15.871Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;至于自己为什么想谈谈对耒阳网站建设的想法，这个就要说起自己曾经做过的一些网站，以及网站主对网站的质量要求。&lt;/p&gt;
+&lt;p&gt;耒阳至今还没有几个能说的上成功的网站，起码有一个还算很用心做。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;耒阳温馨果园在线</summary>
+        
+      
+    
+    
+    
+    <category term="旧博客迁移" scheme="https://sevenrich.github.io/categories/%E6%97%A7%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
+    
+    
+    <category term="企业建站" scheme="https://sevenrich.github.io/tags/%E4%BC%81%E4%B8%9A%E5%BB%BA%E7%AB%99/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>驾考秘籍专卖网做整套SEO营销方案2014/8/21</title>
+    <link href="https://sevenrich.github.io/post/26.html"/>
+    <id>https://sevenrich.github.io/post/26.html</id>
+    <published>2014-08-21T02:09:59.000Z</published>
+    <updated>2021-03-08T02:13:06.968Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.520xx.cn/&quot;&gt;www.520xx.cn&lt;/a&gt;   驾考秘籍专卖网&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;此网站注册到现在已经有 7月18天</summary>
+        
+      
+    
+    
+    
+    <category term="旧博客迁移" scheme="https://sevenrich.github.io/categories/%E6%97%A7%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
+    
+    
+    <category term="SEO" scheme="https://sevenrich.github.io/tags/SEO/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2014年的读书计划及动态更新（20140820更新）</title>
+    <link href="https://sevenrich.github.io/post/24.html"/>
+    <id>https://sevenrich.github.io/post/24.html</id>
+    <published>2014-08-20T02:04:19.000Z</published>
+    <updated>2021-03-08T02:07:07.028Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;近期安排：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;《SEO关键解码》第一版 字数338千字。&lt;/p&gt;
+&lt;p&gt;《网络营销实战密码》第一版</summary>
+        
+      
+    
+    
+    
+    <category term="旧博客迁移" scheme="https://sevenrich.github.io/categories/%E6%97%A7%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
+    
+    
+    <category term="学习成长" scheme="https://sevenrich.github.io/tags/%E5%AD%A6%E4%B9%A0%E6%88%90%E9%95%BF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>文字这东西情愿不写 也不轻易转载</title>
+    <link href="https://sevenrich.github.io/post/23.html"/>
+    <id>https://sevenrich.github.io/post/23.html</id>
+    <published>2014-08-11T02:00:31.000Z</published>
+    <updated>2021-03-08T02:04:03.723Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;文字这东西情愿不写，也不轻易转载。&lt;/p&gt;
+&lt;p&gt;每次在群里看到那些好友发来链接将自己的故事，或者自己最近更新的文章，就会去看看。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;一个是出于关心，一个是出于学习。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;但是每每听到有人说，我只是</summary>
+        
+      
+    
+    
+    
+    <category term="旧博客迁移" scheme="https://sevenrich.github.io/categories/%E6%97%A7%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
+    
+    
+    <category term="学习成长" scheme="https://sevenrich.github.io/tags/%E5%AD%A6%E4%B9%A0%E6%88%90%E9%95%BF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SEO小故事：你的目标有多远大，改变世界？那你就错了！</title>
+    <link href="https://sevenrich.github.io/post/22.html"/>
+    <id>https://sevenrich.github.io/post/22.html</id>
+    <published>2014-07-31T01:49:45.000Z</published>
+    <updated>2021-03-08T02:01:27.714Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;SEO小故事抬头：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;有个人年轻时老梦想着自己要改变世界，就一直一直奋斗。&lt;/p&gt;
+&lt;p&gt;到了中年的时候觉得这个梦想太大了，就想那就改变自己的祖国吧，又过了好些年，又老了一些，发展改变祖国也做不到，那就想着改变自己的家乡吧。&lt;/p&gt;
+&lt;</summary>
+        
+      
+    
+    
+    
+    <category term="旧博客迁移" scheme="https://sevenrich.github.io/categories/%E6%97%A7%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
+    
+    
+    <category term="SEO" scheme="https://sevenrich.github.io/tags/SEO/"/>
+    
+    <category term="学习成长" scheme="https://sevenrich.github.io/tags/%E5%AD%A6%E4%B9%A0%E6%88%90%E9%95%BF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>微信/QQ空间被传销营销泛滥 正在失去他该有的商业价值</title>
+    <link href="https://sevenrich.github.io/post/21.html"/>
+    <id>https://sevenrich.github.io/post/21.html</id>
+    <published>2014-07-28T01:37:04.000Z</published>
+    <updated>2021-03-08T01:49:14.075Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;不知道是 QQ</summary>
+        
+      
+    
+    
+    
+    <category term="旧博客迁移" scheme="https://sevenrich.github.io/categories/%E6%97%A7%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
+    
+    
+    <category term="SEO" scheme="https://sevenrich.github.io/tags/SEO/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>工作步入正规，博客继续更新</title>
+    <link href="https://sevenrich.github.io/post/20.html"/>
+    <id>https://sevenrich.github.io/post/20.html</id>
+    <published>2014-07-02T01:27:55.000Z</published>
+    <updated>2021-03-08T01:33:54.593Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;5月份搬至广州工作，很多东西重新购买，电脑也不例外。&lt;/p&gt;
+&lt;p&gt;刚入手一电脑、安装好网线，以后能正常上网。如意就更要拼执行力咯。&lt;/p&gt;
+&lt;p&gt;工作步入正规，博客继续更新。今天是7月25日。&lt;/p&gt;
+</summary>
+        
+      
+    
+    
+    
+    <category term="旧博客迁移" scheme="https://sevenrich.github.io/categories/%E6%97%A7%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
+    
+    
+    <category term="学习成长" scheme="https://sevenrich.github.io/tags/%E5%AD%A6%E4%B9%A0%E6%88%90%E9%95%BF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SITE 命令下的一下不为人知的秘密之 SEO 数据分析</title>
+    <link href="https://sevenrich.github.io/post/19.html"/>
+    <id>https://sevenrich.github.io/post/19.html</id>
+    <published>2014-06-23T01:20:37.000Z</published>
+    <updated>2021-03-08T01:27:14.234Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在学完SEO基础课程之后，一般都会开始接触网站的数据分析。其中一个指令也是被很多人说的神乎其神—&lt;code&gt;SITE指令&lt;/code&gt;。其实</summary>
+        
+      
+    
+    
+    
+    <category term="旧博客迁移" scheme="https://sevenrich.github.io/categories/%E6%97%A7%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
+    
+    
+    <category term="SEO" scheme="https://sevenrich.github.io/tags/SEO/"/>
+    
+  </entry>
+  
+  <entry>
     <title>教你 DIY 为 WordPress 生成网站访问日志，告别后台下载</title>
-    <link href="https://sevenrich.gitee.io/post/18.html"/>
-    <id>https://sevenrich.gitee.io/post/18.html</id>
+    <link href="https://sevenrich.github.io/post/18.html"/>
+    <id>https://sevenrich.github.io/post/18.html</id>
     <published>2014-06-12T12:38:01.000Z</published>
     <updated>2021-03-05T12:58:19.149Z</updated>
     
@@ -34,434 +561,12 @@
     
     
     
-    <category term="旧博客迁移" scheme="https://sevenrich.gitee.io/categories/%E6%97%A7%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
+    <category term="旧博客迁移" scheme="https://sevenrich.github.io/categories/%E6%97%A7%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
     
     
-    <category term="WordPress" scheme="https://sevenrich.gitee.io/tags/WordPress/"/>
+    <category term="WordPress" scheme="https://sevenrich.github.io/tags/WordPress/"/>
     
-    <category term="PHP" scheme="https://sevenrich.gitee.io/tags/PHP/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2014/05/14 第四站 南漂广州，我来了！</title>
-    <link href="https://sevenrich.gitee.io/post/17.html"/>
-    <id>https://sevenrich.gitee.io/post/17.html</id>
-    <published>2014-05-14T12:33:21.000Z</published>
-    <updated>2021-03-05T12:57:05.093Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;人人都说北漂，而我就不是那个喜欢北漂的人。&lt;/p&gt;
-&lt;p&gt;回想起当初意气风发从学校出来，几个玩的要好的人各自商量着将来要干嘛、干嘛！好有壮志凌云的感觉，但是现实是我们这些人懒。不是一般的懒，是很懒！&lt;/p&gt;
-&lt;p&gt;当初我从学校出来就一心要南漂，&lt;/p&gt;
-&lt;blockquot</summary>
-        
-      
-    
-    
-    
-    <category term="旧博客迁移" scheme="https://sevenrich.gitee.io/categories/%E6%97%A7%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
-    
-    
-    <category term="学习成长" scheme="https://sevenrich.gitee.io/tags/%E5%AD%A6%E4%B9%A0%E6%88%90%E9%95%BF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>耒阳 SEO 实战之本地网站建设本地PHP环境的搭建</title>
-    <link href="https://sevenrich.gitee.io/post/16.html"/>
-    <id>https://sevenrich.gitee.io/post/16.html</id>
-    <published>2014-05-09T12:30:22.000Z</published>
-    <updated>2021-03-05T12:33:03.061Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;为什么要选择用 PHP 的我想不用我解释了，这个是出于安全性能及后期维护成本出发的。如果有资金、有技术的就另当别论了。&lt;/p&gt;
-&lt;p&gt;PHP环境有太多了，比如说免费的 XMAPP / PHPSTUDY / PHPNOW</summary>
-        
-      
-    
-    
-    
-    <category term="旧博客迁移" scheme="https://sevenrich.gitee.io/categories/%E6%97%A7%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
-    
-    
-    <category term="SEO" scheme="https://sevenrich.gitee.io/tags/SEO/"/>
-    
-    <category term="企业建站" scheme="https://sevenrich.gitee.io/tags/%E4%BC%81%E4%B8%9A%E5%BB%BA%E7%AB%99/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>耒阳 SEO 实战之本地网站建设网站系统的选择</title>
-    <link href="https://sevenrich.gitee.io/post/15.html"/>
-    <id>https://sevenrich.gitee.io/post/15.html</id>
-    <published>2014-05-01T12:23:48.000Z</published>
-    <updated>2021-03-05T12:31:18.430Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;当你的网站有了域名，有了空间，下一步就是需要一套完整的网站源码。网站的源码有很多。有收费的、有开源的、也有自己请技术人员专门开发的。当然不管你的网站属于哪一类，总归离不开一点，就是网站的系统是为了用户体验。&lt;/p&gt;
-&lt;p&gt;没有良好的用户体验的网站系统是不符合现在的社会需求的</summary>
-        
-      
-    
-    
-    
-    <category term="旧博客迁移" scheme="https://sevenrich.gitee.io/categories/%E6%97%A7%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
-    
-    
-    <category term="SEO" scheme="https://sevenrich.gitee.io/tags/SEO/"/>
-    
-    <category term="企业建站" scheme="https://sevenrich.gitee.io/tags/%E4%BC%81%E4%B8%9A%E5%BB%BA%E7%AB%99/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>耒阳网站建设最后一单，丰源农庄网站制作交单ing...</title>
-    <link href="https://sevenrich.gitee.io/post/14.html"/>
-    <id>https://sevenrich.gitee.io/post/14.html</id>
-    <published>2014-04-30T12:21:30.000Z</published>
-    <updated>2021-03-05T12:23:19.035Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;预览图当然要先上&lt;/p&gt;
-&lt;p&gt;首页预览：&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;%E9%A6%96%E9%A1%B5.png&quot;&gt;&lt;/a&gt;{图片过期}&lt;/p&gt;
-&lt;p&gt;新闻列表页：&lt;/p&gt;
-&lt;p&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="旧博客迁移" scheme="https://sevenrich.gitee.io/categories/%E6%97%A7%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
-    
-    
-    <category term="AspCMS" scheme="https://sevenrich.gitee.io/tags/AspCMS/"/>
-    
-    <category term="企业建站" scheme="https://sevenrich.gitee.io/tags/%E4%BC%81%E4%B8%9A%E5%BB%BA%E7%AB%99/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>耒阳 SEO 实战之本地网站建设选空间的注意要点</title>
-    <link href="https://sevenrich.gitee.io/post/13.html"/>
-    <id>https://sevenrich.gitee.io/post/13.html</id>
-    <published>2014-04-29T12:17:41.000Z</published>
-    <updated>2021-03-05T12:20:38.213Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;一个网站拥有一个域名是不能称之为网站的。最多能说是拥有了一个名字。没有任何内容，也就相当于一个地基，还没有任何盖房子的砖瓦。&lt;/p&gt;
-&lt;p&gt;如果把网站比作一个房子。那空间就相当于一个房子的砖瓦。是盖房子必不可少的要素。&lt;/p&gt;
-&lt;p&gt;那一个那么重要的要素要怎么样才能找到适合</summary>
-        
-      
-    
-    
-    
-    <category term="旧博客迁移" scheme="https://sevenrich.gitee.io/categories/%E6%97%A7%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
-    
-    
-    <category term="SEO" scheme="https://sevenrich.gitee.io/tags/SEO/"/>
-    
-    <category term="企业建站" scheme="https://sevenrich.gitee.io/tags/%E4%BC%81%E4%B8%9A%E5%BB%BA%E7%AB%99/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>耒阳SEO实战之本地网站建设选域名的方法</title>
-    <link href="https://sevenrich.gitee.io/post/12.html"/>
-    <id>https://sevenrich.gitee.io/post/12.html</id>
-    <published>2014-04-28T12:05:57.000Z</published>
-    <updated>2021-03-05T12:10:34.124Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;域名是一个网站的名字！好名字当然让人印象深刻，同样好域名也同样让人印象深刻。搜索引擎也不例外！&lt;/p&gt;
-&lt;p&gt;下面大家跟着步骤一起行动。相信下面的行动一定能对自己选择域名及对后期网站的 SEO</summary>
-        
-      
-    
-    
-    
-    <category term="旧博客迁移" scheme="https://sevenrich.gitee.io/categories/%E6%97%A7%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
-    
-    
-    <category term="SEO" scheme="https://sevenrich.gitee.io/tags/SEO/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>企业网站必备的一段加入收藏|设为主页通用HTML代码</title>
-    <link href="https://sevenrich.gitee.io/post/10.html"/>
-    <id>https://sevenrich.gitee.io/post/10.html</id>
-    <published>2014-04-26T12:02:04.000Z</published>
-    <updated>2021-03-05T12:05:39.913Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;常常在企业网站上面看到有加入收藏 | 设为主页的按钮，可是一但到自己要用的时候发现代码老实写错，不能用！今天就把自己常用的通用的 html 代码分享给需要的朋友！&lt;/p&gt;
-&lt;p&gt;首先我们需要建立一个 JS 文件，来保证按钮的赋值的正常。&lt;/p&gt;
-&lt;p&gt;比如说建立一个</summary>
-        
-      
-    
-    
-    
-    <category term="旧博客迁移" scheme="https://sevenrich.gitee.io/categories/%E6%97%A7%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
-    
-    
-    <category term="HTML" scheme="https://sevenrich.gitee.io/tags/HTML/"/>
-    
-    <category term="JavaScript" scheme="https://sevenrich.gitee.io/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>wordpress 用函数自定义随机图片调用</title>
-    <link href="https://sevenrich.gitee.io/post/9.html"/>
-    <id>https://sevenrich.gitee.io/post/9.html</id>
-    <published>2014-04-15T11:55:29.000Z</published>
-    <updated>2021-03-05T12:02:31.633Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;wordpress 太强大了，每天去研究都有一些自己的心得。今天分享一下自己最近研究的一段代码。&lt;/p&gt;
-&lt;p&gt;在模板下的 &lt;code&gt;functions.php&lt;/code&gt; 中添加一段支持外链缩略图的代码如下：&lt;/p&gt;
-&lt;pre class=&quot;line-numbers</summary>
-        
-      
-    
-    
-    
-    <category term="旧博客迁移" scheme="https://sevenrich.gitee.io/categories/%E6%97%A7%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
-    
-    
-    <category term="WordPress" scheme="https://sevenrich.gitee.io/tags/WordPress/"/>
-    
-    <category term="PHP" scheme="https://sevenrich.gitee.io/tags/PHP/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>原来SEO原理如此简单易懂</title>
-    <link href="https://sevenrich.gitee.io/post/8.html"/>
-    <id>https://sevenrich.gitee.io/post/8.html</id>
-    <published>2014-04-13T11:52:07.000Z</published>
-    <updated>2021-03-05T11:54:55.573Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;记得是在一次签到时间无意间和朋友说起你去搜索关于《秘密》一书去阅读一下。很是推荐他去阅读。结果这位兄台就一直在百度找“秘密”。始终没有找到自己需要的东西。&lt;/p&gt;
-&lt;p&gt;结果就跑过来问我，问我说我要他找的书是哪个！我不惊讶的说了一句：有问题上百度。百度上面会有你的要找的东西</summary>
-        
-      
-    
-    
-    
-    <category term="旧博客迁移" scheme="https://sevenrich.gitee.io/categories/%E6%97%A7%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
-    
-    
-    <category term="SEO" scheme="https://sevenrich.gitee.io/tags/SEO/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>wordpress 用 JS 封装淘宝客链接屏蔽蜘蛛</title>
-    <link href="https://sevenrich.gitee.io/post/7.html"/>
-    <id>https://sevenrich.gitee.io/post/7.html</id>
-    <published>2014-04-12T11:47:30.000Z</published>
-    <updated>2021-03-05T11:51:38.581Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;百度对垃圾淘客站有点不友好，导致淘客的生存空间很受限制。&lt;/p&gt;
-&lt;p&gt;今天说的 JS 封装淘宝客链接是针对 wordpress 用 JS 封装淘宝客链接屏蔽蜘蛛。针对蜘蛛不能抓取 JS</summary>
-        
-      
-    
-    
-    
-    <category term="旧博客迁移" scheme="https://sevenrich.gitee.io/categories/%E6%97%A7%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
-    
-    
-    <category term="JavaScript" scheme="https://sevenrich.gitee.io/tags/JavaScript/"/>
-    
-    <category term="WordPress" scheme="https://sevenrich.gitee.io/tags/WordPress/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>人人都想要的AspCms自定义幻灯片</title>
-    <link href="https://sevenrich.gitee.io/post/6.html"/>
-    <id>https://sevenrich.gitee.io/post/6.html</id>
-    <published>2014-04-10T11:41:49.000Z</published>
-    <updated>2021-03-05T11:45:43.714Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;近期接到一个项目，需要用 ASPCMS 做一个网站。无赖 ASPCMS 的默认幻灯片不能满足需要需要就自己集合在网上找的一些代码自定义了一个幻灯片！分享给需要的人，希望有帮助！&lt;/p&gt;
-&lt;p&gt;在根目录下的 &lt;code&gt;/inc/&lt;/code&gt; 文件夹中找到</summary>
-        
-      
-    
-    
-    
-    <category term="旧博客迁移" scheme="https://sevenrich.gitee.io/categories/%E6%97%A7%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
-    
-    
-    <category term="AspCMS" scheme="https://sevenrich.gitee.io/tags/AspCMS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>耒阳市车辆检测站网站制作预览图发布</title>
-    <link href="https://sevenrich.gitee.io/post/5.html"/>
-    <id>https://sevenrich.gitee.io/post/5.html</id>
-    <published>2014-04-08T11:39:39.000Z</published>
-    <updated>2021-03-05T11:41:22.122Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;耒阳市车辆检测站网站制作预览图发布&lt;/p&gt;
-&lt;p&gt;首页预览图：&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;%E9%A6%96%E9%A1%B5.jpg&quot;&gt;&lt;/a&gt;{图片过期}&lt;/p&gt;
-&lt;p&gt;列表页预览图：&lt;/p&gt;
-&lt;p&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="旧博客迁移" scheme="https://sevenrich.gitee.io/categories/%E6%97%A7%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
-    
-    
-    <category term="AspCMS" scheme="https://sevenrich.gitee.io/tags/AspCMS/"/>
-    
-    <category term="企业建站" scheme="https://sevenrich.gitee.io/tags/%E4%BC%81%E4%B8%9A%E5%BB%BA%E7%AB%99/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>wordpress与企业网站的完美融合</title>
-    <link href="https://sevenrich.gitee.io/post/4.html"/>
-    <id>https://sevenrich.gitee.io/post/4.html</id>
-    <published>2014-04-06T11:36:49.000Z</published>
-    <updated>2021-03-05T11:46:34.224Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;wordpress 是一个开源的 blog 系统，同时也是一个强大的CMS文章系统。对用 wordpress 做企业站是一个很好的选择。我本人比较推荐 wordpress 制作企业站。&lt;/p&gt;
-&lt;p&gt;在耒阳，一眼看过去很多 ASPcms</summary>
-        
-      
-    
-    
-    
-    <category term="旧博客迁移" scheme="https://sevenrich.gitee.io/categories/%E6%97%A7%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
-    
-    
-    <category term="企业建站" scheme="https://sevenrich.gitee.io/tags/%E4%BC%81%E4%B8%9A%E5%BB%BA%E7%AB%99/"/>
-    
-    <category term="WordPress" scheme="https://sevenrich.gitee.io/tags/WordPress/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>我在耒阳做过的SEO网站优化经验</title>
-    <link href="https://sevenrich.gitee.io/post/3.html"/>
-    <id>https://sevenrich.gitee.io/post/3.html</id>
-    <published>2014-04-05T11:32:45.000Z</published>
-    <updated>2021-03-05T11:36:09.735Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;我在耒阳打拼已经有三年之久，期初的自己在家闭门造车。到现在的在网络公司上班。在自己手上也做过几十个耒阳当地、外地的企业网站。想想在耒阳自己经手的网站就不敢拿出来说。但是作为自己的经验，也做为自己的客户见证，我就拿出来给大家作下参考。&lt;/p&gt;
-&lt;p&gt;要说我也不知道从哪里说起，</summary>
-        
-      
-    
-    
-    
-    <category term="旧博客迁移" scheme="https://sevenrich.gitee.io/categories/%E6%97%A7%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
-    
-    
-    <category term="SEO" scheme="https://sevenrich.gitee.io/tags/SEO/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>耒阳市车辆检测站网站制作日志</title>
-    <link href="https://sevenrich.gitee.io/post/1.html"/>
-    <id>https://sevenrich.gitee.io/post/1.html</id>
-    <published>2014-04-03T11:18:55.000Z</published>
-    <updated>2021-03-05T11:33:35.381Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;第一个写在自己blog的网站–耒阳市车辆检测站网站&lt;/p&gt;
-&lt;p&gt;耒阳市车辆检测站是一家以服务为主的企业，所以网站需要的是为服务群体提供信息动态。主要信息动态的是检测动态，及检测完成情况。&lt;/p&gt;
-&lt;p&gt;以及部分公司相关规定，及检测车辆相关流程手续及所需要的材料准备。等信息</summary>
-        
-      
-    
-    
-    
-    <category term="旧博客迁移" scheme="https://sevenrich.gitee.io/categories/%E6%97%A7%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
-    
-    
-    <category term="AspCMS" scheme="https://sevenrich.gitee.io/tags/AspCMS/"/>
-    
-    <category term="SQLite" scheme="https://sevenrich.gitee.io/tags/SQLite/"/>
+    <category term="PHP" scheme="https://sevenrich.github.io/tags/PHP/"/>
     
   </entry>
   
