@@ -4,6 +4,183 @@
   
     
     <entry>
+      <title>7月25日 输入/出重定向、管道符、环境变量、vim</title>
+      <link href="/post/45.html"/>
+      <url>/post/45.html</url>
+      
+        <content type="html"><![CDATA[<pre class="line-numbers language-BASH" data-language="BASH"><code class="language-BASH">| 管道符&gt; 输出 大于号&lt; 输入 小于号&gt;&gt; 追加输出&lt;&lt; 追加输入&amp;&gt;   正常错误等信息全部输出<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>管道符 == 万能门。将前一个命令的处理结果，当做参数交给后面的命令处理。</p><p>常见转义</p><pre class="line-numbers language-BASH" data-language="BASH"><code class="language-BASH">\  反斜杠'' 单引号"" 双引号`` 反引号 【把其中的命令执行后返回结果】<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><p>如果工作时，界面的文字出现乱码</p><pre class="line-numbers language-BASH" data-language="BASH"><code class="language-BASH">LANG  系统语言、语系名称<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>别名 <code>alias</code> 删除</p><pre class="line-numbers language-BASH" data-language="BASH"><code class="language-BASH">unset  别名<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p><img src="/post/45/202007263937_4028.jpg"></p><p><img src="/post/45/202007261713_7275.jpg"></p><p><img src="/post/45/202007263380_4341.jpg"></p><p><img src="/post/45/202007263062_7322.jpg"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 旧博客迁移 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>old-post-44</title>
+      <link href="/post/44.html"/>
+      <url>/post/44.html</url>
+      
+        <content type="html"><![CDATA[<p>今天就是一堆命令，掩面不说，今天好好练习去。</p><pre class="line-numbers language-BASH" data-language="BASH"><code class="language-BASH">ifconfig 获取网卡配置与网络状态等信息uname 查看系统的负载信息free 显示当前系统中内存的使用量信息who 查看当前登入主机的用户终端信息last 查看所有系统的登录记录history 显示历史执行过的命令sosreport 收集系统配置及架构信息并输出诊断文档（订阅 redhat 服务才能使用）pwd 显示当前所处的工作目录cd 切换工作路径ls 显示目录中的文件信息cat 查看纯文本文件more 查看纯文本文件head 查看纯文本文档的前 N 行tail 查看纯文本文档的后 N 行或持续刷新内容tr 替换文本文件中的字符wc 统计指定文本的行数、字数、字节数stat 查看文件的具体存储信息和时间等信息cut 查看文件的具体存储信息和时间等信息diff 比较多个文本文件差异touch 创建空白文件或设置文件的时间mkdir 创建空白目录cp 复制文件或目录mv 剪切文件或文件重命名rm 删除文件或目录dd 按照指定大小和个数的数据块来复制文件或转换文件file 查看文件的类型<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p><img src="/post/44/202007264818_9295.jpg" alt="Linux 笔记"></p><p><img src="/post/44/202007263235_515.jpg" alt="Linux 笔记"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 旧博客迁移 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>7月19日 笔记汇总</title>
+      <link href="/post/43.html"/>
+      <url>/post/43.html</url>
+      
+        <content type="html"><![CDATA[<p>刚开始用 <code>x-mind</code> 整理笔记，在放假的时间收到书。已经开始转向到书上记录，可以在看书的时候，把要记忆的知识点标识出来。</p><p><img src="/post/43/202007261514_5045.jpg" alt="7月19日 Linux 笔记"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 旧博客迁移 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>7月18日 笔记汇总，一个新的开始</title>
+      <link href="/post/42.html"/>
+      <url>/post/42.html</url>
+      
+        <content type="html"><![CDATA[<p>好久没有写文章了，之前的都是本地写，也有想过是用 <code>hexo</code> 生成静态放 <code>Github</code>, 还是继续 <code>ECS</code> 放阿里。</p><p>还是简单点吧。又没有什么太的变动，来来回回折腾好像还真的不是我的风格。那就还是保持这个 <code>ZBlog</code> 吧。从 <code>asp</code> 到 <code>php</code> 始终如一。</p><p>开始新的征程 – <code>Linux</code>。 这一次把<code>RHCE</code> 证拿了再说。先立一个小目标。</p><p>目前还没有收到书，那就自己写脑图。</p><p><img src="/post/42/Linux_first_day.png" alt="Linux 第一天"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 旧博客迁移 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Phpcms模块开发全过程记录帖</title>
+      <link href="/post/41.html"/>
+      <url>/post/41.html</url>
+      
+        <content type="html"><![CDATA[<p>模块的开发，在<code>phpcms</code>的二开里面是经常用到。我当然也是经常打交道。记录下，方便日后查阅。</p><h3 id="第一-了解模块的主要目录结构"><a href="#第一-了解模块的主要目录结构" class="headerlink" title="第一 了解模块的主要目录结构"></a>第一 了解模块的主要目录结构</h3><pre class="line-numbers language-PHP" data-language="PHP"><code class="language-PHP">classes 类目录functions 函数目录install 安装目录   |-languages 模块的语言文件      |-templates 模块前台使用模板      |-config.inc.php 模块信息，填写模块名称、简介、开发者信息     |-extention.inc.php  后前管理菜单生成文件     |-model.php 模型定义文件      |-moduel.sql 用于向数据库插入 模块的配置信息，templates 后台模板目录uninstall 卸载模块相关文件目录   |-extention.inc.php  后前管理菜单生成文件      |-model.php 模型定义文件index.php 是前台浏览调用的类文件<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>了解了模块的主要目录结构，我们就能很轻易的做开发了。</p><h3 id="第二-建立模块的基本目录结构"><a href="#第二-建立模块的基本目录结构" class="headerlink" title="第二 建立模块的基本目录结构"></a>第二 建立模块的基本目录结构</h3><p>比如说我现在要做一个管理的后台应用：<code>Key密匙管理</code>。那我就需要在<code>phpcms/modules</code>建立一个<code>createkey目录</code>。</p><p>再依次在<code>createkey目录</code>下建立目录和文件树如下：</p><pre class="line-numbers language-PHP" data-language="PHP"><code class="language-PHP">createkey  模块根目录    classes 类目录    functions 函数目录    install 安装目录       |-languages 模块的语言文件          |-templates 模块前台使用模板          |-config.inc.php 模块信息，填写模块名称、简介、开发者信息         |-extention.inc.php  后前管理菜单生成文件         |-model.php 模型定义文件          |-moduel.sql 用于向数据库插入 模块的配置信息，    templates 后台模板目录    uninstall 卸载模块相关文件目录       |-extention.inc.php  后前管理菜单生成文件          |-model.php 模型定义文件    index.php 是后台浏览调用的类文件<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="第三-配置模块配置文件config-inc-php"><a href="#第三-配置模块配置文件config-inc-php" class="headerlink" title="第三 配置模块配置文件config.inc.php"></a>第三 配置模块配置文件config.inc.php</h3><p><code>install/config.inc.php</code> 代码如下：</p><pre class="line-numbers language-PHP" data-language="PHP"><code class="language-PHP">&lt;?php    defined('IN_PHPCMS') or exit('Access Denied');    defined('INSTALL') or exit('Access Denied');    $module = 'createkey'; //模块的标识符，唯一性，不可重名,应该和目录同名    $modulename = 'Key密匙管理';     $introduce = 'Key密匙管理，用来APP授权Key生成！';    $author = '七年';    $authorsite = 'http://www.leiyangseo.com';    $authoremail = 'workmart@vip.qq.com';?&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="第四-增加模块菜单"><a href="#第四-增加模块菜单" class="headerlink" title="第四 增加模块菜单"></a>第四 增加模块菜单</h3><p><code>install/extention.inc.php</code> 代码如下：</p><pre class="line-numbers language-PHP" data-language="PHP"><code class="language-PHP">&lt;?php    defined('IN_PHPCMS') or exit('Access Denied');    defined('INSTALL') or exit('Access Denied');    #true或1，表示返回当前sql插入的id,因为子菜单要用到    $parentid = $menu_db-&gt;insert(array('name' =&gt; 'createkey_manage','parentid' =&gt; '30','m' =&gt; 'createkey','c' =&gt; 'index','a' =&gt; 'init','data' =&gt; '','listorder' =&gt; 0,'display' =&gt; '1'),true);    #$language数组中的值会追加到system_menu.lang.php的$LANG变量中    $language = array('createkey_manage' =&gt; 'APP_Key密匙管理');?&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p><code>parentid</code>可以根据自己的需要去设置。想要附到指定ID，<code>后台 &gt; 扩展 &gt; 菜单管理 &gt;id</code> 就能看到你想要指定的ID是多少。</p><h3 id="第五-创建后台类文件和模板文件"><a href="#第五-创建后台类文件和模板文件" class="headerlink" title="第五 创建后台类文件和模板文件"></a>第五 创建后台类文件和模板文件</h3><p>后台类文件用<code>index.php</code>代码如下：</p><pre class="line-numbers language-PHP" data-language="PHP"><code class="language-PHP">&lt;?php    defined('IN_PHPCMS') or exit('Access Denied');    pc_base::load_app_class('admin', 'admin', 0);    class index extends admin {        function __construct() {            parent::__construct();        }        public function init() {            include $this-&gt;admin_tpl('index');        }    }?&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>模板文件<code>templates/index.tpl.php</code>代码如下：</p><p>备注：因为工作原因，代码保留核心不公开。</p><pre class="line-numbers language-PHP" data-language="PHP"><code class="language-PHP">&lt;?php    defined('IN_ADMIN') or exit('No permission resources.');    include $this-&gt;admin_tpl('header','admin');?&gt;&lt;div class="pad_10"&gt;我是测试&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="第六-向模块表中插入模块安装信息"><a href="#第六-向模块表中插入模块安装信息" class="headerlink" title="第六 向模块表中插入模块安装信息"></a>第六 向模块表中插入模块安装信息</h3><p><code>install/moduls.sql</code>代码如下：</p><pre class="line-numbers language-SQL" data-language="SQL"><code class="language-SQL">INSERT INTO `phpcms_module` (`module`, `name`, `url`, `iscore`, `version`, `description`, `setting`, `listorder`, `disabled`, `installdate`, `updatedate`) VALUES ('createkey', 'Key密匙管理', '', '0', '1.0', '', '', '0', '0', '2015-05-16', '2015-05-16');<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>字段的名称已经很好的阐述了字段的作用，所以我只对部分字段解释：</p><pre class="line-numbers language-txt" data-language="txt"><code class="language-txt">iscore    为1,表示是系统内置模块，是必选模块，二次开发，通常值为0即可disabled    1表示禁止卸载，0表示可卸载setting    配置变量<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 旧博客迁移 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> PHP </tag>
+            
+            <tag> PhpCMS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>备注下PHP GD库函数，方便日后使用</title>
+      <link href="/post/40.html"/>
+      <url>/post/40.html</url>
+      
+        <content type="html"><![CDATA[<p>GetImageSize</p><p>作用：取得图片的大小[即长与宽]</p><p>用法：array GetImageSize(string filename, array [imageinfo]);</p><p>ImageArc</p><p>作用：画弧线 </p><p>用法：int ImageArc(int im, int cx, int cy, int w, int h, int s, int e, int col);</p><p>ImageChar</p><p>作用：写出横向字符 </p><p>用法：int ImageChar(int im, int font, int x, int y, string c, int col);</p><p>ImageCharUp</p><p>作用：写出竖式字符</p><p>用法：int ImageCharup(int im, int font, int x, int y, string c, int col);</p><p>ImageColorAllocate</p><p>作用：匹配颜色</p><p>用法：int ImageColorAllocate(int im, int red, int green, int blue);</p><p>ImageColorTransparent</p><p>作用：指定透明背景色</p><p>用法：int ImageColorTransparent(int im, int [col]);</p><p>ImageCopyResized</p><p>作用：复制新图并调整大小 </p><p>用法：int ImageCopyResized(int dst_im, int src_im, int dstX, int dstY, int srcX, int srcY, int dstW, int dstH, int srcW, int srcH);</p><p>ImageCreate</p><p>作用：建立新图</p><p>用法：int ImageCreate(int x_size, int y_size);</p><p>ImageDashedLine</p><p>作用：绘虚线 </p><p>用法：int ImageDashedLine(int im, int x1, int y1, int x2, int y2, int col);</p><p>ImageDestroy </p><p>作用：结束图形 </p><p>用法解释：int ImageDestroy(int im);</p><p>ImageFill</p><p>作用：图形着色</p><p>用法：int ImageFill(int im, int x, int y, int col);</p><p>ImageFilledPolygon</p><p>作用：多边形区域着色</p><p>用法：int ImageFilledPolygon(int im, array points, int num_points, int col);</p><p>ImageFilledRectangle</p><p>作用：矩形区域着色 </p><p>用法：int ImageFilledRectangle(int im, int x1, int y1, int x2, int y2, int col);</p><p>ImageFillToBorder</p><p>作用：指定颜色区域内着色</p><p>用法：int ImageFillToBorder(int im, int x, int y, int border, int col);</p><p>ImageFontHeight</p><p>作用：取得字型的高度</p><p>用法：int ImageFontHeight(int font);</p><p>ImageFontWidth</p><p>作用：取得字型的宽度</p><p>用法：int ImageFontWidth(int font);</p><p>ImageFontWidth</p><p>作用：取得字型的宽度</p><p>用法：int ImageFontWidth(int font);</p><p>ImageLine</p><p>作用：绘实线</p><p>用法：int ImageLine(int im, int x1, int y1, int x2, int y2, int col);</p><p>ImageLoadFont</p><p>作用：载入点阵字型</p><p>用法：int ImageLoadFont(string file);</p><p>ImagePolygon</p><p>作用：绘多边形</p><p>用法：int ImagePolygon(int im, array points, int num_points, int col);</p><p>ImageRectangle</p><p>作用：绘矩形</p><p>用法：int ImageRectangle(int im, int x1, int y1, int x2, int y2, int col);</p><p>ImageSetPixel</p><p>作用：绘点</p><p>用法：int ImageSetPixel(int im, int x, int y, int col); </p><p>ImageString</p><p>作用：绘横式字符串</p><p>用法：int ImageString(int im, int font, int x, int y, string s, int col);</p><p>ImageStringUp</p><p>作用：绘直式字符串</p><p>用法：int ImageStringUp(int im, int font, int x, int y, string s, int col);</p><p>ImageSX</p><p>作用：取得图片的宽度</p><p>用法：int ImageSX(int im);</p><p>ImageSY</p><p>作用：取得图片的高度</p><p>用法：int ImageSY(int im);</p><p>ImageTTFBBox</p><p>作用：计算 TTF 文字所占区域</p><p>用法：array ImageTTFBBox(int size, int angle, string fontfile, string text);</p><p>ImageTTFText</p><p>作用：写 TTF 文字到图中</p><p>用法：array ImageTTFText(int im, int size, int angle, int x, int y, int col, string fontfile, string text); </p><p>ImageColorAt</p><p>作用：取得图中指定点颜色的索引值</p><p>用法：int ImageColorAt(int im, int x, int y);</p><p>ImageColorClosest</p><p>作用：计算色表中与指定颜色最接近者</p><p>用法：int ImageColorClosest(int im, int red, int green, int blue);</p><p>ImageColorExact</p><p>作用：计算色表上指定颜色索引值</p><p>用法：int ImageColorExact(int im, int red, int green, int blue);</p><p>ImageColorResolve</p><p>作用：计算色表上指定或最接近颜色的索引值</p><p>用法：int ImageColorResolve(int im, int red, int green, int blue);</p><p>ImageColorSet</p><p>作用：设定色表上指定索引的颜色</p><p>用法：boolean ImageColorSet(int im, int index, int red, int green, int blue);</p><p>ImageColorsForIndex</p><p>作用：取得色表上指定索引的颜色</p><p>用法：array ImageColorsForIndex(int im, int index);</p><p>ImageColorsTotal</p><p>作用：计算图的颜色数</p><p>用法：int ImageColorsTotal(int im);</p><p>ImagePSLoadFont</p><p>作用：载入 PostScript 字型</p><p>用法：int ImagePSLoadFont(string filename);</p><p>ImagePSFreeFont</p><p>作用：卸下 PostScript 字型</p><p>用法：void ImagePSFreeFont(int fontindex);</p><p>ImagePSEncodeFont</p><p>作用：PostScript 字型转成向量字</p><p>用法：int ImagePSEncodeFont(string encodingfile);</p><p>ImagePSText</p><p>作用：写 PostScript 文字到图中</p><p>用法：array ImagePSText(int image, string text, int font, int size, int foreground, int background, int x, int y, int space, int tightness, float angle, int antialias_steps);</p><p>ImagePSBBox</p><p>作用：计算 PostScript 文字所占区域</p><p>用法： array ImagePSBBox(string text, int font, int size, int space, int width, float angle);</p><p>ImageCreateFromPNG</p><p>作用：取出 PNG 图型</p><p>用法：int ImageCreateFromPng(string filename);</p><p>ImagePNG</p><p>作用：建立 PNG 图型</p><p>用法：int ImagePng(int im, string [filename]);</p><p>ImageCreateFromGIF</p><p>作用：取出 GIF 图型</p><p>用法：int ImageCreateFromGif(string filename);</p><p>ImageGIF</p><p>作用：建立 GIF 图型 </p><p>用法：int ImageGif(int im, string [filename]);</p><p>GD使用一般步骤：(PHP)</p><pre class="line-numbers language-PHP" data-language="PHP"><code class="language-PHP">if (!isset($_SESSION)) { //判断session是否开启    session_start(); //开启就session} $width = 70; //布画宽度$height = 25; //布画高度$length = 4;//验证码长度$code = getcode($length); //获取随机字符串$_SESSION['verfyCode'] = $code; $img = imagecreate($width, $height);$bgcolor = imagecolorallocate($img, 240, 240, 240);$rectangelcolor = imagecolorallocate($img, 150, 150, 150);imagerectangle($img, 1, 1, $width-1, $height-1, $rectangelcolor);//画边框for ($i = 0; $i &lt; $length; $i++) {//循环写字    $codecolor = imagecolorallocate($img, mt_rand(50, 200), mt_rand(50, 128), mt_rand(50, 200));    $angle = rand(-20, 20);    $charx = $i * 15 + 8;    $chary = ($height + 14) / 2 + rand(-1, 1);    imagettftext($img, 15, $angle, $charx, $chary, $codecolor, './ariblk.ttf', $code[$i]);}for ($i = 0; $i &lt; 20; $i++) {//循环画线    $linecolor = imagecolorallocate($img, mt_rand(0, 250), mt_rand(0, 250), mt_rand(0, 250));    $linex = mt_rand(1, $width - 1);    $liney = mt_rand(1, $height - 1);    imageline($img, $linex, $liney, $linex + mt_rand(0, 4) - 2, $liney + mt_rand(0, 4) - 2, $linecolor);}for ($i = 0; $i &lt; 100; $i++) {//循环画点    $pointcolor = imagecolorallocate($img, mt_rand(0, 250), mt_rand(0, 250), mt_rand(0, 250));    imagesetpixel($img, mt_rand(1, $width - 1), mt_rand(1, $height - 1), $pointcolor);}function getcode($length) {//生成php随机数     $pattern = '1234567890ABCDEFGHIJKLOMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz ';//字符池     for ($i = 0; $i &lt; $length; $i++) {         $key .= $pattern{mt_rand(0, 35)};     }     return $key; }ob_clean();header('Content-type:image/png'); imagepng($img);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>通常按需增加某些功能。结合session就能做登录验证用。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 旧博客迁移 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> PHP </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>VirtualBox 扩展包安装失败解决方法</title>
+      <link href="/post/39.html"/>
+      <url>/post/39.html</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>主机：windows8.1<br>版本：4.3.26</p></blockquote><p><code>VirtualBox</code>官网下载<code>VirtualBox Extension Pack</code> 以后直接双击文件会弹出安装引导，如果继续下去发现会报错如下：</p><p>安装扩展包 <code>D:\Wget Files\Oracle_VM_VirtualBox_Extension_Pack-4.3.26-98988.vbox-extpack</code> 失败。</p><blockquote><p>The installer failed with exit code 1:</p></blockquote><pre class="line-numbers language-txt" data-language="txt"><code class="language-txt">返回代码: E_FAIL (0x80004005)组件: ExtPackManager界面: IExtPackManager {3295e6ce-b051-47b2-9514-2c588bfe7554}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>解决方法：（说明这个是我在度娘那找来的。）</p><h3 id="方法1：目录中文"><a href="#方法1：目录中文" class="headerlink" title="方法1：目录中文"></a>方法1：目录中文</h3><p>我不想说什么了，我这个哪里有中文，我醉了。</p><h3 id="方法2：用管理员权限运行扩展包"><a href="#方法2：用管理员权限运行扩展包" class="headerlink" title="方法2：用管理员权限运行扩展包"></a>方法2：用管理员权限运行扩展包</h3><p>哥哥我要给你抱大脚了好吧？来大腿伸出来我抱。图我就不截取了，要是你出现这个，你试试能找到不，找到记得告诉我一声。我真心拜师。</p><h3 id="方法3：先用管理员权限运行VirtualBox，再来运行扩展包（包解决）"><a href="#方法3：先用管理员权限运行VirtualBox，再来运行扩展包（包解决）" class="headerlink" title="方法3：先用管理员权限运行VirtualBox，再来运行扩展包（包解决）"></a>方法3：先用管理员权限运行VirtualBox，再来运行扩展包（包解决）</h3><p>看到这个的时候，我还想终于找到解药了。很是愉快的拿来一用。</p><p>瞬间草泥马涌上心头。这是故意的吧？还能愉快的和你们这些人玩吗？</p><p>我想是不能了。</p><p>还好有强大的<code>Google</code>。这个我不说，大家懂的。</p><h3 id="终级解决方法"><a href="#终级解决方法" class="headerlink" title="终级解决方法"></a>终级解决方法</h3><p>其实是管理员权限的问题，有两种途径可以解决。</p><blockquote><p>第一种：用管理员模式的命令行运行扩展包。</p></blockquote><blockquote><p>第二种：右键点击 VirtualBox 图标-&gt;以管理员身份运行。</p></blockquote><p>打开面板以后在菜单：<code>管理-&gt;全局设定-&gt;扩展</code>，找到添加包的按钮选择扩展包。</p><p>安装好以后就可以使用<code>usb设备</code>了，如果不行的话重启一下主机。若要被虚拟机捕获到设备还需要在虚拟机的设置里面添加一个<code>usb设备筛选器</code>。</p><p>这个扩展只支持<code>usb2.0</code>，<code>usb3.0</code>的设备使用了。</p><p>好的完结。哈哈开心的笑了。面对一些人的说法，我也是笑了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 旧博客迁移 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>wget 命令下载 ftp 整站数据无压力</title>
       <link href="/post/38.html"/>
       <url>/post/38.html</url>
