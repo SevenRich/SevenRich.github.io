@@ -4,17 +4,23 @@
 
 # Site
 title: Chris Xu
-subtitle: '个人博客'
+subtitle: '小七码农一枚'
 description: ''
-keywords:
+keywords: PHP开发工师，个人博客，耒阳SEO
 author: Chris Xu
 language: zh-CN
 timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://sevenrich.gitee.io
+url: https://sevenrich.github.io
 permalink: :abbrlink
+# 文章生成永久链接
+# npm install hexo-abbrlink --save
+abbrlink:
+  alg: crc16   #算法： crc16(default) and crc32
+  rep: dec     #进制： dec(default) and hex: dec #输出进制：十进制和十六进制，默认为10进制。丨dec为十进制，hex为十六进制
+
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -40,7 +46,7 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true # 资源目录
 relative_link: false
 future: true
 highlight:
@@ -171,12 +177,7 @@ hexo_external_link:
   domain: 'your_domain' # 如果开启了防盗链
   safety_chain: true
 
-# 文章生成永久链接
-# npm install hexo-abbrlink --save
-abbrlink:
-  alg: crc16   #算法： crc16(default) and crc32
-  rep: dec     #进制： dec(default) and hex: dec #输出进制：十进制和十六进制，默认为10进制。丨dec为十进制，hex为十六进制
-
+# npm install hexo-asset-image --save
 
 
 
